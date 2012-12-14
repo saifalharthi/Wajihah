@@ -7,6 +7,9 @@ body {
 	direction: rtl;
 	
 }
+div {
+	font-size: 14px;
+}
 
 .rounded {
 	@extend %rounded;

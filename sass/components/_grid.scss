@@ -14,18 +14,9 @@
 @for $i from 1 through $mobile-cols-num {
 	.#{str-num($i)}-mobile {
 		width: percentage($i / $mobile-cols-num);
+		margin-bottom: 10px;
 	}
 
-}
-
-
-.col {
-	float: right;
-	padding: 0 $cols-gutter;
-	overflow: hidden;
-}
-.col:last-child {
-	float: left;
 }
 
 @media all and (min-width: 1224px) {
@@ -34,16 +25,47 @@
 		width: 960px;
 	}
 	.row {
-	 	margin-right: -15px;
+		margin: 0;
+		margin-right: -15px;
 	}
+
 	@for $i from 1 through $cols-num {
 		.#{str-num($i)} {
 			width: percentage($i / $cols-num);
 		}
 	}
+	@for $i from 1 through $cols-num - 1 {
+		.row .offset-#{str-num($i)} {
+			margin-right: percentage($i / $cols-num);
+		}
+	}
 	
 }
 
+.pull-right {
+	float: right!important;
+}
+.pull-left {
+	float: left!important;
+}
 
+.row.collapse {
+	margin-right: 0px;
+}
 
+.row.collapse .col {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.col {
+	float: right;
+	padding: 0 $cols-gutter;
+}
+.col:last-child {
+	float: left;
+}
+.col:first-child {
+	float: right;
+}
 

@@ -3,27 +3,37 @@
 }
 
 %main-header {
-	background: #333;
-	@include background(null, linear-gradient(bottom , #222, #444));
-	border-bottom: 1px solid #000;
-	@include box-shadow(#444 0px 0px 5px);
-	color: #fff;
 
 	position: absolute;
 	top: 0;
 	right: 0;
 	width: 100%;
-	min-height: 1px;
-	max-height: 50px;
+	height: 45px;
+}
+%main-header.white {
+	background: #ededed;
+	border-bottom: 1px solid #dedede;
+	color: #444;
+}
+%main-header.fixed {
+	position: fixed;
+}
+%main-header.black {
+	background: #333;
+	color: #fff;
 }
 %main-header .logo, %main-header .text {
-	margin: 0;
-	padding: 0 25px;
+	height: 35px;
+	float: right;
+}
+%main-header .logo {
+	margin: 5px 0;
+}
+%main-header .text {
+	margin: 5px 0;
+	font-size:24px;
 }
 
 %main-header a {
 	color: inherit;
-}
-%main-header.fixed {
-	position: fixed;
 }

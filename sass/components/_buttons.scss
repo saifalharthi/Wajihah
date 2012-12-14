@@ -1,0 +1,64 @@
+.btn {
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+
+	@include single-transition(background, 0.3s, ease-in-out, 0);
+
+
+	padding: 10px 35px;
+	width: auto;
+}
+.btn.curve {
+	@include border-radius(4px);
+}
+.btn.circle {
+	@include border-radius(30px);
+}
+.grey {
+	background: $grey;
+	color: $black;
+}
+.blue {
+	background: $blue;
+	color: #fff;
+}
+
+
+
+
+/* Hover State */
+.btn:hover {
+	background: darken(#e9e9e9, 5%);
+}
+.blue:hover {
+	background: darken($blue, 5%);
+}
+.blue-on-hover:hover {
+	background: $blue;
+	color: #fff;
+}
+.normal-on-hover:hover {
+	background: #e9e9e9;
+	color: $black;
+}
+
+/* Active State */
+.btn:active {
+	@include box-shadow(#ccc 0px 2px 5px inset);
+	background: darken(#e9e9e9, 10%);
+}
+.blue:active {
+	background: darken($blue, 10%);
+	@include box-shadow(none);
+	color: #fff;
+}
+
+@media all and (min-width: 1224px) {
+	
+	.btn {
+		display: inline;
+	}
+
+}
