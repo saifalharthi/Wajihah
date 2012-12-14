@@ -1,0 +1,49 @@
+
+/* GRID */
+.container {
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0;
+}
+
+
+@include clearfix(".container");
+
+@include clearfix(".row");
+
+@for $i from 1 through $mobile-cols-num {
+	.#{str-num($i)}-mobile {
+		width: percentage($i / $mobile-cols-num);
+	}
+
+}
+
+
+.col {
+	float: right;
+	padding: 0 $cols-gutter;
+	overflow: hidden;
+}
+.col:last-child {
+	float: left;
+}
+
+@media all and (min-width: 1224px) {
+
+	.container {
+		width: 960px;
+	}
+	.row {
+	 	margin-right: -15px;
+	}
+	@for $i from 1 through $cols-num {
+		.#{str-num($i)} {
+			width: percentage($i / $cols-num);
+		}
+	}
+	
+}
+
+
+
+

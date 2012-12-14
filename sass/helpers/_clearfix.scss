@@ -1,0 +1,19 @@
+@mixin clearfix($selector) {
+	#{$selector}:before,
+	#{$selector}:after {
+	    content: " "; /* 1 */
+	    display: table; /* 2 */
+	}
+
+	#{$selector}:after {
+	    clear: both;
+	}
+
+	/**
+	 * For IE 6/7 only
+	 * Include this rule to trigger hasLayout and contain floats.
+	 */
+	#{$selector} {
+	    *zoom: 1;
+	}
+}

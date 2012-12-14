@@ -1,0 +1,24 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+
+/* GLOBALS */
+
+body {
+	direction: rtl;
+	
+}
+
+.rounded {
+	@extend %rounded;
+}
+img {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.main-header {
+	@extend %main-header;
+
+}
+@include clearfix('.main-header');
