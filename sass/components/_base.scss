@@ -5,12 +5,12 @@
 
 body {
 	direction: rtl;
-	
-}
-div {
-	font-size: 14px;
 }
 
+.box {
+	width: 100%;
+	background: #ededed;
+}
 .rounded {
 	@extend %rounded;
 }
@@ -23,5 +23,8 @@ img {
 .main-header {
 	@extend %main-header;
 
+}
+.rounded {
+	@include border-radius(4px);
 }
 @include clearfix('.main-header');
