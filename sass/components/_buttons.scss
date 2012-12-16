@@ -1,5 +1,3 @@
-
-
 .btn {
 	font-weight: bold;
 	text-align: center;
@@ -24,7 +22,15 @@
 }
 .blue {
 	background: $blue;
+}
+.blue, .green, .red {
 	color: #fff;
+}
+.green {
+	background: #08aaaa;
+}
+.red {
+	background: #ea0000;
 }
 
 
@@ -37,11 +43,17 @@
 .blue:hover {
 	background: darken($blue, 5%);
 }
+.green:hover {
+	background: darken(#08aaaa, 5%);
+}
+.red:hover {
+	background: darken(#ea0000, 5%);
+}
 .blue-on-hover:hover {
 	background: $blue;
 	color: #fff;
 }
-.normal-on-hover:hover {
+.grey-on-hover:hover {
 	background: #e9e9e9;
 	color: $black;
 }
@@ -57,10 +69,3 @@
 	color: #fff;
 }
 
-@media all and (min-width: 1224px) {
-	
-	.btn {
-		display: inline;
-	}
-
-}

@@ -2,38 +2,4 @@
 	@include border-radius(4px);
 }
 
-%main-header {
 
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 45px;
-}
-%main-header.white {
-	background: #ededed;
-	border-bottom: 1px solid #dedede;
-	color: #444;
-}
-%main-header.fixed {
-	position: fixed;
-}
-%main-header.black {
-	background: #333;
-	color: #fff;
-}
-%main-header .logo, %main-header .text {
-	height: 35px;
-	float: right;
-}
-%main-header .logo {
-	margin: 5px 0;
-}
-%main-header .text {
-	margin: 5px 0;
-	font-size:24px;
-}
-
-%main-header a {
-	color: inherit;
-}

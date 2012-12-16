@@ -39,7 +39,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 
 }
 input:focus, textarea:focus {
-	@include box-shadow(#ededed 0px 0px 5px);
+	@include box-shadow(#dedede 0px 0px 5px);
 	border: 1px solid #ccc;
 }
 form .col:last-child {
