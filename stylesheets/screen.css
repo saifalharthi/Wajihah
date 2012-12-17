@@ -1100,112 +1100,55 @@ form .col:last-child {
 
 /* line 1, ../sass/components/_buttons.scss */
 .btn {
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
+  padding: 6px 18px;
   display: block;
-  -webkit-transition: background 0.3s ease-in-out;
-  -webkit-transition-delay: 0;
-  -moz-transition: background 0.3s ease-in-out 0;
-  -o-transition: background 0.3s ease-in-out 0;
-  transition: background 0.3s ease-in-out 0;
-  padding: 10px 35px;
-  width: auto;
-}
-
-/* line 13, ../sass/components/_buttons.scss */
-.btn.curve {
+  float: right;
+  text-decoration: none;
+  text-align: center;
+  font-family: tahoma;
+  font-size: 12px;
+  color: #333;
+  background: #c1c1c1;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ededed));
+  background-image: -webkit-linear-gradient(#ffffff, #ededed);
+  background-image: -moz-linear-gradient(#ffffff, #ededed);
+  background-image: -o-linear-gradient(#ffffff, #ededed);
+  background-image: linear-gradient(#ffffff, #ededed);
+  border: 1px solid #dbdbdb;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
 }
 
-/* line 16, ../sass/components/_buttons.scss */
-.btn.circle {
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-  border-radius: 30px;
-}
-
-/* line 19, ../sass/components/_buttons.scss */
-.grey {
-  background: #e9e9e9;
-  color: #444444;
-}
-
-/* line 23, ../sass/components/_buttons.scss */
-.blue {
-  background: #0088cc;
-}
-
-/* line 26, ../sass/components/_buttons.scss */
-.blue, .green, .red {
-  color: #fff;
-}
-
-/* line 29, ../sass/components/_buttons.scss */
-.green {
-  background: #08aaaa;
-}
-
-/* line 32, ../sass/components/_buttons.scss */
-.red {
-  background: #ea0000;
-}
-
-/* Hover State */
-/* line 40, ../sass/components/_buttons.scss */
+/* line 20, ../sass/components/_buttons.scss */
 .btn:hover {
-  background: gainsboro;
+  background: #afafaf;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #dedede));
+  background-image: -webkit-linear-gradient(#f9f9f9, #dedede);
+  background-image: -moz-linear-gradient(#f9f9f9, #dedede);
+  background-image: -o-linear-gradient(#f9f9f9, #dedede);
+  background-image: linear-gradient(#f9f9f9, #dedede);
+  border: 1px solid #d5d5d5;
 }
 
-/* line 43, ../sass/components/_buttons.scss */
-.blue:hover {
-  background: #0077b3;
-}
-
-/* line 46, ../sass/components/_buttons.scss */
-.green:hover {
-  background: #079292;
-}
-
-/* line 49, ../sass/components/_buttons.scss */
-.red:hover {
-  background: #d10000;
-}
-
-/* line 52, ../sass/components/_buttons.scss */
-.blue-on-hover:hover {
-  background: #0088cc;
-  color: #fff;
-}
-
-/* line 56, ../sass/components/_buttons.scss */
-.grey-on-hover:hover {
-  background: #e9e9e9;
-  color: #444444;
-}
-
-/* Active State */
-/* line 62, ../sass/components/_buttons.scss */
+/* line 25, ../sass/components/_buttons.scss */
 .btn:active {
-  -webkit-box-shadow: #cccccc 0px 2px 5px inset;
-  -moz-box-shadow: #cccccc 0px 2px 5px inset;
-  box-shadow: #cccccc 0px 2px 5px inset;
-  background: #d0d0d0;
-}
-
-/* line 66, ../sass/components/_buttons.scss */
-.blue:active {
-  background: #006699;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  color: #fff;
+  background: #bbb;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ededed), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(#ededed, #cccccc);
+  background-image: -moz-linear-gradient(#ededed, #cccccc);
+  background-image: -o-linear-gradient(#ededed, #cccccc);
+  background-image: linear-gradient(#ededed, #cccccc);
+  -webkit-box-shadow: #bbbbbb 0px 1px 5px inset;
+  -moz-box-shadow: #bbbbbb 0px 1px 5px inset;
+  box-shadow: #bbbbbb 0px 1px 5px inset;
+  border: 1px solid #bcbcbc;
 }
 
 /* line 1, ../sass/components/UI/_top-bar.scss */
