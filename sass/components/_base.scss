@@ -6,23 +6,34 @@
 body {
 	direction: rtl;
 }
-
-.box {
-	width: 100%;
-	background: #ededed;
-}
 .rounded {
 	@extend %rounded;
 }
 img {
 	max-width: 100%;
 }
-
-.main-header {
-	@extend %main-header;
-
+.table {
+	width: 100%;
+	margin-bottom: 20px;
 }
-.rounded {
-	@include border-radius(4px);
+.table th {
+	font-weight: bold;
+	font-size: 16px;
+	text-align: right;
 }
-@include clearfix('.main-header');
+.table th, .table td  {
+	padding: 10px;
+	border-collapse: collapse;
+}
+.table thead, .table tbody {
+	border: 1px solid #dedede;
+}
+.table td, .table th {
+	border-right: 1px solid #dedede;
+}
+.table tr {
+	border-bottom: 1px solid #dedede;
+}
+.table tr:hover {
+	background: #f5f5f5;
+}

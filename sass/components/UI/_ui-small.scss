@@ -1,5 +1,22 @@
 %rounded {
 	@include border-radius(4px);
 }
+.unstyled {
+	list-style: none;
+	margin-right: 0;
+	padding-right: 0;
+}
 
+.inline  {
+	list-style: none;
+	margin-right: 0;
+	padding-right: 0;
 
+	li {
+		display: inline;
+		padding-right: 15px;
+	}
+	li:first-child {
+		padding-right: 0;
+	}
+}
