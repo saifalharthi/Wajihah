@@ -608,6 +608,15 @@ body {
   direction: rtl;
 }
 
+/* line 9, ../sass/components/_base.scss */
+.rounded {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
 /* line 12, ../sass/components/_base.scss */
 img {
   max-width: 100%;
@@ -748,10 +757,10 @@ img {
 
 /* line 29, ../sass/components/_grid.scss */
 .show-on-desktop, .show-on-tablet, .hide-on-mobile {
-  display: none;
+  display: none!important;
 }
 
-@media only screen and (min-width: 960px) and (max-width: 1823px) {
+@media only screen and (min-width: 960px) {
   /* line 35, ../sass/components/_grid.scss */
   .container {
     width: 960px;
@@ -763,266 +772,266 @@ img {
     margin-right: -15px;
   }
 
-  /* line 44, ../sass/components/_grid.scss */
+  /* line 43, ../sass/components/_grid.scss */
   .one {
     width: 8.33333%;
   }
 
-  /* line 44, ../sass/components/_grid.scss */
+  /* line 43, ../sass/components/_grid.scss */
   .two {
     width: 16.66667%;
   }
 
-  /* line 44, ../sass/components/_grid.scss */
+  /* line 43, ../sass/components/_grid.scss */
   .three {
     width: 25%;
   }
 
-  /* line 44, ../sass/components/_grid.scss */
+  /* line 43, ../sass/components/_grid.scss */
   .four {
     width: 33.33333%;
   }
 
-  /* line 44, ../sass/components/_grid.scss */
+  /* line 43, ../sass/components/_grid.scss */
   .five {
     width: 41.66667%;
   }
 
-  /* line 44, ../sass/components/_grid.scss */
+  /* line 43, ../sass/components/_grid.scss */
   .six {
     width: 50%;
   }
 
-  /* line 44, ../sass/components/_grid.scss */
+  /* line 43, ../sass/components/_grid.scss */
   .seven {
     width: 58.33333%;
   }
 
-  /* line 44, ../sass/components/_grid.scss */
+  /* line 43, ../sass/components/_grid.scss */
   .eight {
     width: 66.66667%;
   }
 
-  /* line 44, ../sass/components/_grid.scss */
+  /* line 43, ../sass/components/_grid.scss */
   .nine {
     width: 75%;
   }
 
-  /* line 44, ../sass/components/_grid.scss */
+  /* line 43, ../sass/components/_grid.scss */
   .ten {
     width: 83.33333%;
   }
 
-  /* line 44, ../sass/components/_grid.scss */
+  /* line 43, ../sass/components/_grid.scss */
   .eleven {
     width: 91.66667%;
   }
 
-  /* line 44, ../sass/components/_grid.scss */
+  /* line 43, ../sass/components/_grid.scss */
   .twelve {
     width: 100%;
   }
 
-  /* line 49, ../sass/components/_grid.scss */
+  /* line 48, ../sass/components/_grid.scss */
   .row .offset-one {
     margin-right: 8.33333%;
   }
 
-  /* line 49, ../sass/components/_grid.scss */
+  /* line 48, ../sass/components/_grid.scss */
   .row .offset-two {
     margin-right: 16.66667%;
   }
 
-  /* line 49, ../sass/components/_grid.scss */
+  /* line 48, ../sass/components/_grid.scss */
   .row .offset-three {
     margin-right: 25%;
   }
 
-  /* line 49, ../sass/components/_grid.scss */
+  /* line 48, ../sass/components/_grid.scss */
   .row .offset-four {
     margin-right: 33.33333%;
   }
 
-  /* line 49, ../sass/components/_grid.scss */
+  /* line 48, ../sass/components/_grid.scss */
   .row .offset-five {
     margin-right: 41.66667%;
   }
 
-  /* line 49, ../sass/components/_grid.scss */
+  /* line 48, ../sass/components/_grid.scss */
   .row .offset-six {
     margin-right: 50%;
   }
 
-  /* line 49, ../sass/components/_grid.scss */
+  /* line 48, ../sass/components/_grid.scss */
   .row .offset-seven {
     margin-right: 58.33333%;
   }
 
-  /* line 49, ../sass/components/_grid.scss */
+  /* line 48, ../sass/components/_grid.scss */
   .row .offset-eight {
     margin-right: 66.66667%;
   }
 
-  /* line 49, ../sass/components/_grid.scss */
+  /* line 48, ../sass/components/_grid.scss */
   .row .offset-nine {
     margin-right: 75%;
   }
 
-  /* line 49, ../sass/components/_grid.scss */
+  /* line 48, ../sass/components/_grid.scss */
   .row .offset-ten {
     margin-right: 83.33333%;
   }
 
-  /* line 49, ../sass/components/_grid.scss */
+  /* line 48, ../sass/components/_grid.scss */
   .row .offset-eleven {
     margin-right: 91.66667%;
   }
 
-  /* line 53, ../sass/components/_grid.scss */
+  /* line 52, ../sass/components/_grid.scss */
   .show-on-desktop {
     display: block;
   }
 
-  /* line 56, ../sass/components/_grid.scss */
+  /* line 55, ../sass/components/_grid.scss */
   .show-on-mobile, .show-on-tablet, .hide-on-desktop {
-    display: none;
+    display: none!important;
   }
 }
-/* line 62, ../sass/components/_grid.scss */
+/* line 61, ../sass/components/_grid.scss */
 .pull-right {
   float: right!important;
 }
 
-/* line 65, ../sass/components/_grid.scss */
+/* line 64, ../sass/components/_grid.scss */
 .pull-left {
   float: left!important;
 }
 
-/* line 69, ../sass/components/_grid.scss */
+/* line 68, ../sass/components/_grid.scss */
 .row.collapse {
   margin-right: 0px;
 }
 
-/* line 73, ../sass/components/_grid.scss */
+/* line 72, ../sass/components/_grid.scss */
 .row.collapse .col {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 78, ../sass/components/_grid.scss */
+/* line 77, ../sass/components/_grid.scss */
 .col {
   float: right;
   padding: 0 15px;
 }
 
-/* line 82, ../sass/components/_grid.scss */
+/* line 81, ../sass/components/_grid.scss */
 .col:last-child {
   float: left;
 }
 
-/* line 85, ../sass/components/_grid.scss */
+/* line 84, ../sass/components/_grid.scss */
 .col:first-child {
   float: right;
 }
 
 /* Tablets */
 @media only screen and (max-width: 959px) and (min-width: 500px) {
-  /* line 93, ../sass/components/_grid.scss */
+  /* line 92, ../sass/components/_grid.scss */
   .container {
     width: 100%;
   }
 
-  /* line 96, ../sass/components/_grid.scss */
+  /* line 95, ../sass/components/_grid.scss */
   .row {
     margin: 0;
   }
 
-  /* line 100, ../sass/components/_grid.scss */
+  /* line 99, ../sass/components/_grid.scss */
   .one-tablet {
     width: 12.5%;
   }
 
-  /* line 100, ../sass/components/_grid.scss */
+  /* line 99, ../sass/components/_grid.scss */
   .two-tablet {
     width: 25%;
   }
 
-  /* line 100, ../sass/components/_grid.scss */
+  /* line 99, ../sass/components/_grid.scss */
   .three-tablet {
     width: 37.5%;
   }
 
-  /* line 100, ../sass/components/_grid.scss */
+  /* line 99, ../sass/components/_grid.scss */
   .four-tablet {
     width: 50%;
   }
 
-  /* line 100, ../sass/components/_grid.scss */
+  /* line 99, ../sass/components/_grid.scss */
   .five-tablet {
     width: 62.5%;
   }
 
-  /* line 100, ../sass/components/_grid.scss */
+  /* line 99, ../sass/components/_grid.scss */
   .six-tablet {
     width: 75%;
   }
 
-  /* line 100, ../sass/components/_grid.scss */
+  /* line 99, ../sass/components/_grid.scss */
   .seven-tablet {
     width: 87.5%;
   }
 
-  /* line 100, ../sass/components/_grid.scss */
+  /* line 99, ../sass/components/_grid.scss */
   .eight-tablet {
     width: 100%;
   }
 
-  /* line 105, ../sass/components/_grid.scss */
+  /* line 104, ../sass/components/_grid.scss */
   .row .offset-one-tablet {
     margin-right: 12.5%;
   }
 
-  /* line 105, ../sass/components/_grid.scss */
+  /* line 104, ../sass/components/_grid.scss */
   .row .offset-two-tablet {
     margin-right: 25%;
   }
 
-  /* line 105, ../sass/components/_grid.scss */
+  /* line 104, ../sass/components/_grid.scss */
   .row .offset-three-tablet {
     margin-right: 37.5%;
   }
 
-  /* line 105, ../sass/components/_grid.scss */
+  /* line 104, ../sass/components/_grid.scss */
   .row .offset-four-tablet {
     margin-right: 50%;
   }
 
-  /* line 105, ../sass/components/_grid.scss */
+  /* line 104, ../sass/components/_grid.scss */
   .row .offset-five-tablet {
     margin-right: 62.5%;
   }
 
-  /* line 105, ../sass/components/_grid.scss */
+  /* line 104, ../sass/components/_grid.scss */
   .row .offset-six-tablet {
     margin-right: 75%;
   }
 
-  /* line 105, ../sass/components/_grid.scss */
+  /* line 104, ../sass/components/_grid.scss */
   .row .offset-seven-tablet {
     margin-right: 87.5%;
   }
 
-  /* line 109, ../sass/components/_grid.scss */
+  /* line 108, ../sass/components/_grid.scss */
   .show-on-tablet {
     display: block;
   }
 
-  /* line 112, ../sass/components/_grid.scss */
+  /* line 111, ../sass/components/_grid.scss */
   .show-on-mobile, .show-on-desktop, .hide-on-tablet {
-    display: none;
+    display: none!important;
   }
 }
-/* line 117, ../sass/components/_grid.scss */
+/* line 116, ../sass/components/_grid.scss */
 .col.centered {
   float: none;
   margin: 0 auto;
@@ -1419,51 +1428,98 @@ form .col:last-child {
   box-shadow: #595959 0px 0px 5px;
 }
 
-/* line 1, ../sass/components/UI/_top-bar.scss */
+/* line 3, ../sass/helpers/_clearfix.scss */
+.navbar:before,
+.navbar:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 8, ../sass/helpers/_clearfix.scss */
+.navbar:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 16, ../sass/helpers/_clearfix.scss */
+.navbar {
+  *zoom: 1;
+}
+
+/* line 2, ../sass/components/UI/_top-bar.scss */
 .navbar {
   background: #fff;
   color: #333;
+  border-bottom: 1px solid #c1c1c1;
   position: relative;
+  z-index: 999;
   top: -60px;
   right: 0;
   padding: 0;
   width: 100%;
-  border-bottom: 1px solid #c1c1c1;
 }
 
-/* line 12, ../sass/components/UI/_top-bar.scss */
+/* line 14, ../sass/components/UI/_top-bar.scss */
 .navbar .logo {
-  float: right;
+  background: #f1f1f1;
   padding: 15px;
-  max-height: 45px;
+  height: 45px;
 }
 
-/* line 17, ../sass/components/UI/_top-bar.scss */
+/* line 20, ../sass/components/UI/_top-bar.scss */
 .navbar .logo img {
   max-height: 35px;
   margin-top: -7.5px;
 }
 
-/* line 21, ../sass/components/UI/_top-bar.scss */
+/* line 24, ../sass/components/UI/_top-bar.scss */
+.navbar .menu-toggle {
+  background: #f1f1f1;
+  padding-left: 0px;
+  height: 45px;
+}
+
+/* line 30, ../sass/components/UI/_top-bar.scss */
+.navbar .menu-toggle-inner {
+  float: left;
+  padding-left: 10px;
+  height: 45px;
+  padding-top: 5px;
+}
+
+/* line 37, ../sass/components/UI/_top-bar.scss */
+.menu-toggle .toggle-line {
+  background: #555;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  height: 5px;
+  width: 25px;
+  display: block;
+  margin-top: 5px;
+}
+
+/* line 46, ../sass/components/UI/_top-bar.scss */
 .navbar input {
   margin: 0;
 }
 
-/* line 24, ../sass/components/UI/_top-bar.scss */
+/* line 49, ../sass/components/UI/_top-bar.scss */
 .navbar h1, .navbar h2, .navbar h3, .navbar h4, .navbar h5, .navbar h6 {
+  color: #444;
   margin: 0;
   line-height: 15px;
-  color: #444;
 }
 
-/* line 29, ../sass/components/UI/_top-bar.scss */
+/* line 56, ../sass/components/UI/_top-bar.scss */
 .nav {
-  display: block;
-  list-style: none;
-  margin: 10px 0 0;
-  width: 100%;
-  padding: 0;
-  overflow: hidden;
   -webkit-box-shadow: #cccccc 0px 0px 5px inset;
   -moz-box-shadow: #cccccc 0px 0px 5px inset;
   box-shadow: #cccccc 0px 0px 5px inset;
@@ -1473,54 +1529,72 @@ form .col:last-child {
   background-image: -o-linear-gradient(#f1f1f1, #ededed);
   background-image: linear-gradient(#f1f1f1, #ededed);
   border-top: 1px solid #c1c1c1;
+  display: block;
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  padding: 0;
 }
 
-/* line 42, ../sass/components/UI/_top-bar.scss */
-.nav li {
-  padding: 15px;
+/* line 70, ../sass/components/UI/_top-bar.scss */
+.nav > li {
   border-bottom: 1px solid #dedede;
   -webkit-box-shadow: #f9f9f9 0px 1px 0px;
   -moz-box-shadow: #f9f9f9 0px 1px 0px;
   box-shadow: #f9f9f9 0px 1px 0px;
 }
 
-/* line 47, ../sass/components/UI/_top-bar.scss */
-.nav li:last-child {
+/* line 75, ../sass/components/UI/_top-bar.scss */
+.nav > li:last-child {
   margin-bottom: 0;
 }
 
-/* line 50, ../sass/components/UI/_top-bar.scss */
-.nav a {
+/* line 78, ../sass/components/UI/_top-bar.scss */
+.nav > li > a {
   color: #666;
   text-decoration: none;
   width: 100%;
+  display: block;
+}
+
+/* line 85, ../sass/components/UI/_top-bar.scss */
+.nav > li > form, .nav > li > a {
+  padding: 15px;
 }
 
 @media only screen and (min-width: 960px) {
-  /* line 58, ../sass/components/UI/_top-bar.scss */
+  /* line 91, ../sass/components/UI/_top-bar.scss */
   .navbar {
+    background: #f1f1f1;
     max-height: 45px;
     top: 0px;
-    background: #f1f1f1;
   }
 
-  /* line 63, ../sass/components/UI/_top-bar.scss */
-  .navbar form {
+  /* line 97, ../sass/components/UI/_top-bar.scss */
+  .nav > li > form {
     padding: 9.5px;
   }
-  /* line 66, ../sass/components/UI/_top-bar.scss */
-  .navbar form input {
+  /* line 100, ../sass/components/UI/_top-bar.scss */
+  .nav > li > form input {
     margin: 0;
   }
 
-  /* line 70, ../sass/components/UI/_top-bar.scss */
+  /* line 105, ../sass/components/UI/_top-bar.scss */
+  .navbar .logo {
+    float: right;
+    background: transparent;
+    width: auto;
+    max-width: 16.66667%;
+  }
+
+  /* line 113, ../sass/components/UI/_top-bar.scss */
   .fixed {
     position: fixed;
     top: 0;
     right: 0;
   }
 
-  /* line 75, ../sass/components/UI/_top-bar.scss */
+  /* line 118, ../sass/components/UI/_top-bar.scss */
   .nav {
     background: transparent;
     border: none;
@@ -1533,12 +1607,12 @@ form .col:last-child {
     -o-border-radius: 0px;
     border-radius: 0px;
     margin: 0;
-    float: right;
+    float: right!important;
     width: auto;
   }
 
-  /* line 87, ../sass/components/UI/_top-bar.scss */
-  .nav li {
+  /* line 130, ../sass/components/UI/_top-bar.scss */
+  .nav > li {
     display: block;
     float: right;
     border-bottom: none;
@@ -1548,21 +1622,20 @@ form .col:last-child {
     padding: 0;
   }
 
-  /* line 95, ../sass/components/UI/_top-bar.scss */
-  .nav a {
-    display: block;
+  /* line 138, ../sass/components/UI/_top-bar.scss */
+  .nav > li > a {
     line-height: 44px;
-    padding: 0 15px;
+    padding: 0 20px;
     border-left: 1px solid #d1d1d1;
   }
 
-  /* line 101, ../sass/components/UI/_top-bar.scss */
-  .nav li:first-child a {
+  /* line 143, ../sass/components/UI/_top-bar.scss */
+  .nav > li:first-child > a {
     border-right: 1px solid #d1d1d1;
   }
 
-  /* line 104, ../sass/components/UI/_top-bar.scss */
-  .nav a:hover {
+  /* line 146, ../sass/components/UI/_top-bar.scss */
+  .nav > li > a:hover {
     color: #333;
     background: #f9f9f9;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #ededed));
@@ -1572,8 +1645,8 @@ form .col:last-child {
     background-image: linear-gradient(#f9f9f9, #ededed);
   }
 
-  /* line 109, ../sass/components/UI/_top-bar.scss */
-  .nav .selected {
+  /* line 151, ../sass/components/UI/_top-bar.scss */
+  .nav > .selected {
     font-weight: bold;
     color: #333;
     background: #ededed;
@@ -1587,7 +1660,7 @@ form .col:last-child {
     box-shadow: #cccccc 0px 0px 5px inset;
   }
 }
-/* line 120, ../sass/components/UI/_top-bar.scss */
+/* line 162, ../sass/components/UI/_top-bar.scss */
 .navbar {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f1f1f1));
   background-image: -webkit-linear-gradient(#ffffff, #f1f1f1);
@@ -1600,33 +1673,249 @@ form .col:last-child {
 }
 
 /* line 1, ../sass/components/UI/_ui-small.scss */
-.rounded {
+.arrow-down, .arrow-left, .sub-menu > a::after, .dropdown .dropdown-back::before {
+  width: 0;
+  height: 0;
+  display: inline-block;
+}
+
+/* line 7, ../sass/components/UI/_ui-small.scss */
+.nav .arrow-down, .nav .arrow-left, .nav .sub-menu > a::after, .nav .dropdown .dropdown-back::before, .dropdown .nav .dropdown-back::before {
+  margin-right: 10px;
+}
+
+/* line 10, ../sass/components/UI/_ui-small.scss */
+.arrow-down {
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-top: 4px solid #777;
+}
+
+/* line 18, ../sass/components/UI/_ui-small.scss */
+.arrow-left, .sub-menu > a::after {
+  border-bottom: 4px solid transparent;
+  border-right: 4px solid #777;
+  border-top: 4px solid transparent;
+}
+
+/* line 26, ../sass/components/UI/_ui-small.scss */
+.dropdown .dropdown-back::before {
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #777;
+  border-top: 4px solid transparent;
+}
+
+/* line 42, ../sass/components/UI/_ui-small.scss */
+.img-circle {
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  border-radius: 200px;
+}
+
+/* line 45, ../sass/components/UI/_ui-small.scss */
+.img-frame {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  background: #fff;
+  padding: 4px;
+  border: 1px solid #dedede;
 }
 
-/* line 4, ../sass/components/UI/_ui-small.scss */
+/* line 51, ../sass/components/UI/_ui-small.scss */
 .unstyled {
   list-style: none;
   margin-right: 0;
   padding-right: 0;
 }
 
-/* line 10, ../sass/components/UI/_ui-small.scss */
+/* line 57, ../sass/components/UI/_ui-small.scss */
 .inline {
   list-style: none;
   margin-right: 0;
   padding-right: 0;
 }
-/* line 15, ../sass/components/UI/_ui-small.scss */
+/* line 62, ../sass/components/UI/_ui-small.scss */
 .inline li {
   display: inline;
   padding-right: 15px;
 }
-/* line 19, ../sass/components/UI/_ui-small.scss */
+/* line 66, ../sass/components/UI/_ui-small.scss */
 .inline li:first-child {
   padding-right: 0;
+}
+
+/* line 3, ../sass/helpers/_clearfix.scss */
+.dropdown-menu > li:before,
+.dropdown-menu > li:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 8, ../sass/helpers/_clearfix.scss */
+.dropdown-menu > li:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 16, ../sass/helpers/_clearfix.scss */
+.dropdown-menu > li {
+  *zoom: 1;
+}
+
+/* line 2, ../sass/components/UI/_drop-down.scss */
+.dropdown {
+  background: #f7f7f7;
+  border-bottom: 1px solid #dedede;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 46px;
+  display: none;
+}
+/* line 12, ../sass/components/UI/_drop-down.scss */
+.dropdown .dropdown-back {
+  border-bottom: 1px solid #dedede;
+  font-family: arial;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 20px 0;
+}
+/* line 20, ../sass/components/UI/_drop-down.scss */
+.dropdown .dropdown-back::before {
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid #333;
+  border-top: 6px solid transparent;
+  content: '';
+  margin-left: 10px;
+}
+/* line 29, ../sass/components/UI/_drop-down.scss */
+.dropdown .dropdown-back::after {
+  content: 'عودة';
+}
+
+/* line 34, ../sass/components/UI/_drop-down.scss */
+.dropdown-menu {
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+}
+/* line 41, ../sass/components/UI/_drop-down.scss */
+.dropdown-menu > li {
+  width: 100%;
+}
+/* line 44, ../sass/components/UI/_drop-down.scss */
+.dropdown-menu > li > a {
+  color: #333;
+  text-decoration: none;
+  float: right;
+  width: 100%;
+  padding: 5px 20px;
+}
+/* line 56, ../sass/components/UI/_drop-down.scss */
+.dropdown-menu .dropdown-section {
+  padding: 5px 20px 0;
+  color: #888;
+  font-size: 11px;
+}
+/* line 61, ../sass/components/UI/_drop-down.scss */
+.dropdown-menu .dropdown-section:first-child {
+  padding-top: 0;
+}
+/* line 64, ../sass/components/UI/_drop-down.scss */
+.dropdown-menu .dropdown-divider {
+  background: #dedede;
+  height: 1px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+/* line 75, ../sass/components/UI/_drop-down.scss */
+.sub-menu > a::after {
+  float: left;
+  margin-top: 5px;
+  content: '';
+}
+/* line 81, ../sass/components/UI/_drop-down.scss */
+.sub-menu .dropdown {
+  top: 0;
+}
+
+/* line 85, ../sass/components/UI/_drop-down.scss */
+.sub-menu:hover > a::after {
+  border-right-color: #fff;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 90, ../sass/components/UI/_drop-down.scss */
+  .dropdown {
+    border-bottom: none;
+    -webkit-box-shadow: #f1f1f1 0 0 5px;
+    -moz-box-shadow: #f1f1f1 0 0 5px;
+    box-shadow: #f1f1f1 0 0 5px;
+    min-height: auto;
+    width: auto;
+    min-width: 180px;
+    position: absolute;
+    top: 38px;
+  }
+
+  /* line 101, ../sass/components/UI/_drop-down.scss */
+  .dropdown-menu {
+    border: 1px solid #dedede;
+    background: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  /* line 106, ../sass/components/UI/_drop-down.scss */
+  .dropdown:hover {
+    display: block!important;
+  }
+
+  /* line 110, ../sass/components/UI/_drop-down.scss */
+  .sub-menu .dropdown {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: #f1f1f1 -2px 2px 5px;
+    -moz-box-shadow: #f1f1f1 -2px 2px 5px;
+    box-shadow: #f1f1f1 -2px 2px 5px;
+    right: 100%;
+    position: absolute;
+    top: 100%;
+    margin-top: -50px;
+    margin-right: -10px;
+    width: 110%;
+  }
+
+  /* line 123, ../sass/components/UI/_drop-down.scss */
+  .dropdown-toggle:hover > a, .dropdown-toggle:hover > a:hover {
+    background: #fff;
+  }
+
+  /* line 127, ../sass/components/UI/_drop-down.scss */
+  .sub-menu.dropdown-toggle:hover > a {
+    background: #08c;
+    color: #fff;
+  }
+
+  /* line 131, ../sass/components/UI/_drop-down.scss */
+  .dropdown-toggle:hover > .dropdown {
+    display: block;
+  }
 }

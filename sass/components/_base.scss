@@ -7,7 +7,7 @@ body {
 	direction: rtl;
 }
 .rounded {
-	@extend %rounded;
+	@include border-radius(4px);
 }
 img {
 	max-width: 100%;

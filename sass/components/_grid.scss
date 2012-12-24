@@ -27,10 +27,10 @@
 	display: block;
 }
 .show-on-desktop, .show-on-tablet, .hide-on-mobile {
-	display: none;
+	display: none!important;
 }
 
-@media only screen and (min-width: 960px) and (max-width : 1823px) {
+@media only screen and (min-width: 960px) {
 
 	.container {
 		width: 960px;
@@ -39,7 +39,6 @@
 		margin: 0;
 		margin-right: -15px;
 	}
-
 	@for $i from 1 through $cols-num {
 		.#{str-num($i)} {
 			width: percentage($i / $cols-num);
@@ -54,7 +53,7 @@
 		display: block;
 	}
 	.show-on-mobile, .show-on-tablet, .hide-on-desktop {
-		display: none;
+		display: none!important;
 	}
 	
 }
@@ -110,7 +109,7 @@
 		display: block;
 	}
 	.show-on-mobile, .show-on-desktop, .hide-on-tablet {
-		display: none;
+		display: none!important;
 	}
 	
 }

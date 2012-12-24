@@ -1,0 +1,134 @@
+@include clearfix('.dropdown-menu > li');
+.dropdown {
+	background: #f7f7f7;
+	border-bottom: 1px solid #dedede; 
+	
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	top: 46px;
+	display: none;
+
+	.dropdown-back {
+		border-bottom: 1px solid #dedede;
+		font-family: arial;
+		font-size: 18px;
+		cursor: pointer;
+
+		padding: 20px 0;
+	}
+	.dropdown-back::before {
+		@extend %arrow-right;
+		border-bottom: 6px solid transparent;
+		border-left: 6px solid #333;
+		border-top: 6px solid transparent; 
+
+		content: '';
+		margin-left: 10px;
+	}
+	.dropdown-back::after {
+		content:'عودة';
+	}
+
+}
+.dropdown-menu {
+	padding: 10px 0;
+	margin: 0;
+	list-style: none;
+
+
+
+	> li {
+		width: 100%;
+
+		> a {
+			color: #333;
+			text-decoration: none;
+
+			float: right;
+			width: 100%;
+			padding:5px 20px;  
+
+
+
+		}
+	}
+	.dropdown-section {
+		padding:5px 20px 0;
+		color: #888;
+		font-size: 11px;
+	}
+	.dropdown-section:first-child {
+		padding-top:0;
+	}
+	.dropdown-divider {
+		background: #dedede;
+
+		height: 1px;
+		width: 100%;
+		margin: 5px 0;
+
+	}
+	
+}
+.sub-menu {
+	> a::after {
+		@extend %arrow-left;
+		float: left;
+		margin-top: 5px;
+		content: '';
+	}
+	.dropdown {
+		top: 0;
+	}
+}
+.sub-menu:hover > a::after {
+	border-right-color: #fff; 
+}
+
+@media screen and (min-width: 960px) {
+	.dropdown {
+		border-bottom: none;
+		@include box-shadow(#f1f1f1 0 0 5px);
+
+
+		min-height: auto;
+		width: auto;
+		min-width: 180px;
+		position: absolute;
+		top: 38px;
+	}
+	.dropdown-menu {
+		border:1px solid #dedede;
+		background: #fff;
+		@include border-radius(4px);
+	}
+	.dropdown:hover {
+		display: block!important;
+	}
+	.sub-menu {
+		.dropdown {
+			@include border-radius(4px);
+			@include box-shadow(#f1f1f1 -2px 2px 5px);
+
+			right: 100%;
+			position: absolute;
+			top: 100%;
+			margin-top: -50px;
+			margin-right: -10px;
+			width: 110%;
+
+		}
+	}
+	.dropdown-toggle:hover > a,.dropdown-toggle:hover > a:hover {
+		background: #fff;
+
+	}
+	.sub-menu.dropdown-toggle:hover > a {
+		background: #08c;
+		color: #fff;
+	}
+	.dropdown-toggle:hover > .dropdown {
+		display: block;
+	}
+}

@@ -1,70 +1,113 @@
+@include clearfix('.navbar');
 .navbar {
 	background: #fff;
 	color: #333;
+	border-bottom: 1px solid #c1c1c1;
 
 	position: relative;
+	z-index: 999;
 	top: -60px;
 	right: 0;
 	padding:0;
 	width: 100%;
-	border-bottom: 1px solid #c1c1c1;
 }
 .navbar .logo {
-	float: right;
+	background: #f1f1f1;
+
 	padding: 15px;
-	max-height: 45px;
+	height: 45px;
 }
 .navbar .logo img {
 	max-height: 35px;
 	margin-top: -7.5px;
 }
+.navbar .menu-toggle {
+	background: #f1f1f1;
+
+	padding-left: 0px;
+	height: 45px;
+}
+.navbar .menu-toggle-inner {
+	float: left;
+
+	padding-left: 10px;
+	height: 45px;
+	padding-top: 5px;
+}
+.menu-toggle .toggle-line {
+	background: #555;
+	@include border-radius(4px);
+
+	height: 5px;
+	width: 25px;
+	display: block;
+	margin-top: 5px;
+}
 .navbar input {
 	margin: 0;
 }
 .navbar h1,.navbar h2,.navbar h3,.navbar h4,.navbar h5,.navbar h6 {
+	color: #444;
+
 	margin:0;
 	line-height: 15px;
-	color: #444;
+	
 }
 .nav {
-	display: block;
-	list-style: none;
-	margin: 10px 0 0;
-	width: 100%;
-	padding: 0;
-	overflow: hidden;
 
 	@include box-shadow(#ccc 0px 0px 5px inset);
 	@include background-image(linear-gradient(#f1f1f1, #ededed));
 	border-top: 1px solid #c1c1c1;
 
+
+	display: block;
+	list-style: none;
+	margin: 0;
+	width: 100%;
+	padding: 0;
+
 }
-.nav li {
-	padding: 15px;
+.nav>li {
 	border-bottom: 1px solid #dedede;
 	@include box-shadow(#f9f9f9 0px 1px 0px);
+	
 }
-.nav li:last-child {
+.nav>li:last-child {
 	margin-bottom: 0;
 }
-.nav a {
+.nav>li>a {
 	color: #666;
 	text-decoration: none;
+
 	width: 100%;
+	display: block;
+}
+.nav > li > form , .nav > li > a{
+	padding: 15px;
 }
 
 
 @media only screen and (min-width: 960px) {
 	.navbar {
+		background: #f1f1f1;
+
 		max-height: 45px;
 		top: 0px;
-		background: #f1f1f1;
 	}
-	.navbar form {
+	.nav > li > form {
 		padding: 9.5px;
 
 		input {
 			margin: 0;
+		}
+	}
+	.navbar {
+		.logo {
+			float: right;
+			background: transparent;
+			width: auto;
+			max-width: 16.66667%;
+		
 		}
 	}
 	.fixed {
@@ -81,10 +124,10 @@
 
 
 
-		float: right;
+		float: right!important;
 		width: auto;
 	}
-	.nav li {
+	.nav>li {
 		display: block;
 		float: right;
 		border-bottom:none;
@@ -92,21 +135,20 @@
 		padding: 0;
 	}
 	
-	.nav a {
-		display: block;
+	.nav>li>a {
 		line-height: 44px;
-		padding: 0 15px;
+		padding: 0 20px;
 		border-left: 1px solid lighten(#ccc, 2%);
 	}
-	.nav li:first-child a {
+	.nav>li:first-child>a {
 		border-right: 1px solid lighten(#ccc, 2%);;
 	}
-	.nav a:hover {
+	.nav>li>a:hover {
 		color: #333;
 		background: #f9f9f9;
 		@include background-image(linear-gradient(#f9f9f9, #ededed));
 	}
-	.nav .selected {
+	.nav>.selected {
 		font-weight: bold;
 		color: #333;
 		background: #ededed;
