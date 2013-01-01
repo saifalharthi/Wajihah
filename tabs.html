@@ -11,10 +11,8 @@
         <meta name="description" content="">
 
         <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+        <style type="text/css">body {padding-top:50px; background: #f9f9f9;}</style>
 
-        <style type="text/css">
-            body{margin-top: 60px;}
-        </style>
     </head>
     <body dir="rtl">
         <!--[if lt IE 7]>
@@ -23,35 +21,34 @@
 
         <!-- Add your site or application content here -->
 
-
+       
         <div class="container">
             <div class="row">
 
-                <div class="three four-mobile col">
+                <div class="twelve col four-mobile">
 
-                    <img src="http://placehold.it/350x350" class="img-frame">
-
-                </div>
-
-                <div class="three four-mobile col">
-
-                    <img src="http://placehold.it/350x350" class="img-frame">
-
-                </div>
-
-                <div class="three four-mobile col">
-
-                    <img src="http://placehold.it/350x350" class="img-frame">
+                    <dl class="tabs">
+                      <dd><a href="#simple1">اللسان الاول </a></dd>
+                      <dd class="active"><a href="#simple2">اللسان الثاني</a></dd>
+                      <dd><a href="#simple3">اللسان الثالث</a></dd>
+                    </dl>
+                    <ul class="tabs-content">
+                      <li id="simple1">This is simple tab 1s content. Pretty neat, huh?</li>
+                      <li class="active" id="simple2">This is simple tab 2s content. Now you see it!</li>
+                      <li id="simple3">This is simple tab 3s content.</li>
+                    </ul>
 
                 </div>
 
-                <div class="three four-mobile col">
 
-                    <img src="http://placehold.it/350x350" class="img-frame">
-
-                </div>
             </div>
+
+
         </div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+<script type="text/javascript" src="js/tabs.js"></script>
 
     </body>
 </html>

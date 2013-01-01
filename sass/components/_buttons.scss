@@ -1,11 +1,13 @@
 .btn {
+	width: 100%;
+}
+.btn {
 	padding: 6px 26px;
-	display: block;
-	float: right;
+	display: inline;
 
 	text-decoration: none;
 	text-align: center;
-	color: #333;
+	color: #333!important;
 
 	background: #c1c1c1;
 	@include background-image(linear-gradient(#fff, darken(#fff,13%)));
@@ -48,7 +50,6 @@
 .btn.blue {
 	background: #08c;
 	@include background-image(linear-gradient(lighten(#08c,7%), darken(#08c, 7%)));
-	color: #fff;
 	border: 1px solid darken(#08c, 20%);
 	@include box-shadow(lighten(#08c, 10%) 0px 1px 0px inset);
 	@include text-shadow(0px 1px 0px darken(#08c, 15%));
@@ -68,7 +69,6 @@
 	background: #00cc60;
 
 	@include background-image(linear-gradient(lighten(#00cc60,3%), darken(#00cc60, 10%)));
-	color: #fff;
 	border: 1px solid darken(#00cc60, 20%);
 	@include box-shadow(lighten(#00cc60, 10%) 0px 1px 0px inset);
 	@include text-shadow(0px 1px 0px darken(#00cc60, 15%));
@@ -89,7 +89,6 @@
 	background: #cc9e00;
 
 	@include background-image(linear-gradient(lighten(#cc9e00,15%), #cc9e00));
-	color: #fff;
 	border: 1px solid darken(#cc9e00, 15%);
 	@include box-shadow(lighten(#cc9e00, 10%) 0px 1px 0px inset);
 	@include text-shadow(0px 1px 0px darken(#cc9e00, 15%));
@@ -109,7 +108,6 @@
 	background: #cc000e;
 
 	@include background-image(linear-gradient(lighten(#cc000e,15%), #cc000e));
-	color: #fff;
 	border: 1px solid darken(#cc000e, 15%);
 	@include box-shadow(lighten(#cc000e, 10%) 0px 1px 0px inset);
 	@include text-shadow(0px 1px 0px darken(#cc000e, 15%));
@@ -129,7 +127,6 @@
 	background: #333;
 
 	@include background-image(linear-gradient(lighten(#333,15%), #333));
-	color: #fff;
 	border: 1px solid darken(#333, 15%);
 	@include box-shadow(lighten(#333, 10%) 0px 1px 0px inset);
 	@include text-shadow(0px 1px 0px darken(#333, 15%));
@@ -142,4 +139,16 @@
 }
 .btn.black.glowing {
 	@include box-shadow(lighten(#333, 15%) 0px 0px 5px);
+}
+.btn.blue, .btn.black,.btn.green, .btn.red, .btn.yellow {
+	color: #fff!important;
+}
+
+@media only screen and (min-width: 960px) {
+	.btn {
+		width: auto;
+	}
+	form>.btn {
+		margin: 0 15px;
+	}
 }

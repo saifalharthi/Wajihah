@@ -1,0 +1,32 @@
+@include clearfix('.tabs');
+.tabs {
+	border-bottom: 2px solid #dedede;
+	padding: 0 0 5px;
+}
+.tabs>dd {
+	display: block;
+	float: right;
+}
+.tabs>dd:first-child {
+	margin-right: 0;
+}
+.tabs>dd>a {
+	color: #777;
+	text-decoration: none;
+
+	padding: 0 3px 8px;
+}
+.tabs>.active>a, .tabs>dd:hover>a  {
+	color: #555;
+	border-bottom: 2px solid #aaa;
+}
+
+.tabs-content {
+	list-style: none;
+}
+.tabs-content>li {
+	display: none;
+}
+.tabs-content>.active {
+	display: block;
+}

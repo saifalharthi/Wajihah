@@ -71,3 +71,7 @@ form .col:last-child {
 	float: right;
 	@include border-radius(3px 0px 0px 3px);
 }
+.nav input {
+	width: auto;
+	float: right;
+}
