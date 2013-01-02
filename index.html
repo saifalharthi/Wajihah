@@ -10,9 +10,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="">
 
-        <link rel="stylesheet" type="text/css" href="https://raw.github.com/lafikl/Wajihah/master/stylesheets/screen.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 
         <style type="text/css">
+
+        /* it's not implemented because Sass-lang compiler is stupid i need to put manually back to screen.css for production */
+        .is-not-collapsed {
+            -moz-animation-name: slideDown;
+            -moz-animation-duration: .2s;
+            -moz-animation-iteration-count: 1;
+            -moz-animation-timing-function: linear;
+            -moz-animation-direction: alternate;
+
+            -webkit-animation-name: slideDown;
+            -webkit-animation-duration: .2s;
+            -webkit-animation-iteration-count: 1;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-direction: alternate;
+
+            position: relative;
+            z-index: 988;
+
+            display: block!important;
+    }
+
+
+    @-moz-keyframes slideDown {
+        from { 
+            margin-top: -100%; 
+        }
+        to   { 
+            margin-top: 0; 
+        }
+    }
+    @-webkit-keyframes slideDown {
+        from { 
+            margin-top: -100%; 
+        }
+        to  { 
+            margin-top: 0; 
+        }
+    }​
         </style>
 
 
