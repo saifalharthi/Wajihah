@@ -1,0 +1,74 @@
+.box-alert {
+	@include border-radius(4px);
+
+	width: 100%;
+	margin: 10px 0;
+	padding: 5px 10px;
+
+}
+.close {
+	text-decoration: none;
+	cursor: pointer;
+
+	float: left;
+}
+
+.note {
+	background: #f1f1f1;
+	border: 1px solid #dedede;
+	color: #555;
+
+}
+.note>.close {
+	color: #aaa;
+}
+.note>.close:hover {
+	color: darken(#aaa , 20%);
+}
+
+.success {
+	background: $green;
+	border: 1px solid darken($green, 5%);
+	color: #fff;
+}
+.success>.close {
+	color: darken($green , 10%);;
+}
+.success>.close:hover {
+	color: darken($green , 20%);
+}
+
+.error {
+	background: $red;
+	border: 1px solid darken($red, 5%);
+	color: #fff;
+}
+.error>.close {
+	color: darken($red,10%);
+}
+.error>.close:hover {
+	color: darken($red , 20%);
+}
+
+.important {
+	background: $blue;
+	border: 1px solid darken($blue, 5%);
+	color: #fff;
+}
+.important>.close {
+	color: darken($blue,10%);
+}
+.important>.close:hover {
+	color: darken($blue , 20%);
+}
+/* Flash Alert */
+.flash-alert {
+
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	width: 100%;
+}
+

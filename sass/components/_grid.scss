@@ -1,0 +1,107 @@
+/* GRID */
+
+@include clearfix(".container");
+@include clearfix(".row");
+
+
+.container {
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0;
+}
+
+
+@for $i from 1 through $mobile-cols-num {
+	.#{str-num($i)}-mobile {
+		width: percentage($i / $mobile-cols-num);
+	}
+
+}
+@for $i from 1 through $mobile-cols-num - 1 {
+	.row .offset-#{str-num($i)}-mobile {
+		margin-right: percentage($i / $mobile-cols-num);
+	}
+}
+
+.show-on-mobile {
+	display: block;
+}
+.show-on-desktop, .show-on-tablet, .hide-on-mobile {
+	display: none;
+}
+
+
+
+.pull-right {
+	float: right!important;
+}
+.pull-left {
+	float: left!important;
+}
+
+.row.collapse {
+	margin-right: 0px;
+}
+
+.row.collapse .col {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.col {
+	float: right;
+	padding: 0 $cols-gutter;
+}
+.col:last-child {
+	float: left;
+}
+.col:first-child {
+	float: right;
+}
+.col.centered {
+	float: none;
+	margin: 0 auto;
+}
+
+/* BIG SCREENS! */
+@media only screen and (min-width: 960px) {
+
+	.container {
+		width: 960px;
+	}
+	.row {
+		margin: 0;
+		margin-right: -15px;
+	}
+	@for $i from 1 through $cols-num {
+		.#{str-num($i)} {
+			width: percentage($i / $cols-num);
+		}
+	}
+	@for $i from 1 through $cols-num - 1 {
+		.row .offset-#{str-num($i)} {
+			margin-right: percentage($i / $cols-num);
+		}
+	}
+	.show-on-desktop, .hide-on-mobile, .hide-on-tablet {
+		display: block;
+	}
+	.show-on-mobile, .show-on-tablet, .hide-on-desktop {
+		display: none;
+	}
+
+}
+
+/* Tablets */
+@media only screen and (max-width: 959px) and (min-width: 500px) {
+
+	.show-on-tablet {
+		display: block;
+	}
+	.show-on-mobile, .show-on-desktop, .hide-on-tablet {
+		display: none;
+	}
+	
+}
+
+/* END GRID */

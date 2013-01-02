@@ -1,0 +1,154 @@
+.btn {
+	width: 100%;
+}
+.btn {
+	text-decoration: none;
+	text-align: center;
+	color: #333!important;
+	line-height: 1em;
+	background: #c1c1c1;
+	@include background-image(linear-gradient(#fff, darken(#fff,13%)));
+	border: 1px solid darken(#fff, 25%);
+	@include border-radius(4px);
+
+	padding: 6px 26px;
+	display: inline;
+
+}
+.btn:hover {
+	background: darken(#c1c1c1, 7%);
+	@include background-image(linear-gradient(#f9f9f9, darken(#fff,15%)));
+}
+.btn:active {
+	background: #bbb;
+	@include background-image(linear-gradient(#ededed, #ccc));
+	@include box-shadow(#bbb 0px 1px 5px inset);
+	border: 1px solid darken(#f9f9f9, 24%);
+
+}
+.btn.small {
+	padding: 6px 18px;
+}
+.btn.small , .btn.mini {
+	font-family: tahoma;
+	font-size: 11px;
+}
+.btn.mini {
+	padding: 3px 9px;
+}
+.btn.large {
+	font-family: arial;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	padding: 10px 50px;
+}
+.btn.glowing {
+	@include box-shadow(darken(#fff, 10%) 0px 0px 5px);
+}
+
+.btn.blue {
+	background: #08c;
+	@include background-image(linear-gradient(lighten(#08c,7%), darken(#08c, 7%)));
+	border: 1px solid darken(#08c, 20%);
+	@include box-shadow(lighten(#08c, 10%) 0px 1px 0px inset);
+	@include text-shadow(0px 1px 0px darken(#08c, 15%));
+}
+.btn.blue:hover {
+	@include background-image(linear-gradient(lighten(#08c,2%), darken(#08c, 7%)));
+}
+.btn.blue:active {
+	background: darken(#08c, 5%);
+	@include box-shadow(darken(#08c,20%) 0px 2px 5px inset);
+}
+.btn.blue.glowing {
+	@include box-shadow(lighten(#08c, 15%) 0px 0px 5px);
+}
+
+.btn.green {
+	background: #00cc60;
+
+	@include background-image(linear-gradient(lighten(#00cc60,3%), darken(#00cc60, 10%)));
+	border: 1px solid darken(#00cc60, 20%);
+	@include box-shadow(lighten(#00cc60, 10%) 0px 1px 0px inset);
+	@include text-shadow(0px 1px 0px darken(#00cc60, 15%));
+
+}
+.btn.green:hover {
+	@include background-image(linear-gradient(#00cc60, darken(#00cc60, 10%)));
+}
+.btn.green:active {
+	background: darken(#00cc60, 5%);
+	@include box-shadow(darken(#00cc60,20%) 0px 2px 5px inset);
+}
+.btn.green.glowing {
+	@include box-shadow(lighten(#00cc60, 15%) 0px 0px 5px);
+}
+
+.btn.yellow {
+	background: #cc9e00;
+
+	@include background-image(linear-gradient(lighten(#cc9e00,15%), #cc9e00));
+	border: 1px solid darken(#cc9e00, 15%);
+	@include box-shadow(lighten(#cc9e00, 10%) 0px 1px 0px inset);
+	@include text-shadow(0px 1px 0px darken(#cc9e00, 15%));
+}
+.btn.yellow:hover {
+	@include background-image(linear-gradient(lighten(#cc9e00,7%), #cc9e00));
+}
+.btn.yellow:active {
+	@include box-shadow(darken(#cc9e00,15%) 0px 2px 5px inset);
+}
+.btn.yellow.glowing {
+	@include box-shadow(lighten(#cc9e00, 15%) 0px 0px 5px);
+}
+
+
+.btn.red {
+	background: #cc000e;
+
+	@include background-image(linear-gradient(lighten(#cc000e,15%), #cc000e));
+	border: 1px solid darken(#cc000e, 15%);
+	@include box-shadow(lighten(#cc000e, 10%) 0px 1px 0px inset);
+	@include text-shadow(0px 1px 0px darken(#cc000e, 15%));
+
+}
+.btn.red:hover {
+	@include background-image(linear-gradient(lighten(#cc000e,7%), #cc000e));
+}
+.btn.red:active {
+	@include box-shadow(darken(#cc000e,15%) 0px 2px 5px inset);
+}
+.btn.red.glowing {
+	@include box-shadow(lighten(#cc000e, 15%) 0px 0px 5px);
+}
+
+.btn.black {
+	background: #333;
+
+	@include background-image(linear-gradient(lighten(#333,15%), #333));
+	border: 1px solid darken(#333, 15%);
+	@include box-shadow(lighten(#333, 10%) 0px 1px 0px inset);
+	@include text-shadow(0px 1px 0px darken(#333, 15%));
+}
+.btn.black:hover {
+	@include background-image(linear-gradient(lighten(#333,7%), #333));
+}
+.btn.black:active {
+	@include box-shadow(darken(#333,15%) 0px 2px 5px inset);
+}
+.btn.black.glowing {
+	@include box-shadow(lighten(#333, 15%) 0px 0px 5px);
+}
+.btn.blue, .btn.black,.btn.green, .btn.red, .btn.yellow {
+	color: #fff!important;
+}
+
+@media only screen and (min-width: 960px) {
+	.btn {
+		width: auto;
+	}
+	form>.btn {
+		margin: 0 15px;
+	}
+}
