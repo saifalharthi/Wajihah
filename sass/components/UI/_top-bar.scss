@@ -64,9 +64,9 @@
 
 .navigation {
 	background: #333;
-	
+
 	padding-bottom: 10px;
-	display: block;
+	display: none;
 
 
 	.active {
@@ -79,6 +79,10 @@
 }
 .navigation input:focus {
 	@include box-shadow(darken(#aaa,15%) 0 0 5px);
+}
+/* GPU accelerated animation! */
+.is-not-collapsed {
+	@include translateZ(0);
 }
 
 @media only screen and (min-width: 960px) {
