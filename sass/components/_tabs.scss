@@ -5,25 +5,21 @@
 	margin: 0;
 }
 .tabs>dd {
+	color: #777;
+	text-decoration: none;
+
 	display: block;
 	float: right;
 	padding: 5px;
 	margin-bottom: -2px;
+	cursor: pointer;
 }
 .tabs>dd:first-child {
 	margin-right: 0;
 }
-.tabs>dd>a {
-	color: #777;
-	text-decoration: none;
-	cursor: pointer;
-
-}
-.tabs>.active>a, .tabs>dd:hover>a  {
-	color: #555;
-}
 .tabs>.active, .tabs>dd:hover {
 	border-bottom: 2px solid #aaa;
+	color: #555;
 }
 .tabs-content {
 	background: #fff;
