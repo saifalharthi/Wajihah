@@ -1,12 +1,14 @@
 @include clearfix('.tabs');
 .tabs {
 	border-bottom: 2px solid #dedede;
-	padding: 0 0 5px;
+	padding: 0;
 	margin: 0;
 }
 .tabs>dd {
 	display: block;
 	float: right;
+	padding: 5px;
+	margin-bottom: -2px;
 }
 .tabs>dd:first-child {
 	margin-right: 0;
@@ -20,9 +22,10 @@
 }
 .tabs>.active>a, .tabs>dd:hover>a  {
 	color: #555;
+}
+.tabs>.active, .tabs>dd:hover {
 	border-bottom: 2px solid #aaa;
 }
-
 .tabs-content {
 	background: #fff;
 	border: 1px solid #ededed;

@@ -1439,7 +1439,7 @@ form .col:last-child {
 /* line 2, ../sass/components/_tabs.scss */
 .tabs {
   border-bottom: 2px solid #dedede;
-  padding: 0 0 5px;
+  padding: 0;
   margin: 0;
 }
 
@@ -1447,14 +1447,16 @@ form .col:last-child {
 .tabs > dd {
   display: block;
   float: right;
+  padding: 5px;
+  margin-bottom: -2px;
 }
 
-/* line 11, ../sass/components/_tabs.scss */
+/* line 13, ../sass/components/_tabs.scss */
 .tabs > dd:first-child {
   margin-right: 0;
 }
 
-/* line 14, ../sass/components/_tabs.scss */
+/* line 16, ../sass/components/_tabs.scss */
 .tabs > dd > a {
   color: #777;
   text-decoration: none;
@@ -1462,13 +1464,17 @@ form .col:last-child {
   padding: 0 3px 8px;
 }
 
-/* line 21, ../sass/components/_tabs.scss */
+/* line 23, ../sass/components/_tabs.scss */
 .tabs > .active > a, .tabs > dd:hover > a {
   color: #555;
-  border-bottom: 2px solid #aaa;
 }
 
 /* line 26, ../sass/components/_tabs.scss */
+.tabs > .active, .tabs > dd:hover {
+  border-bottom: 2px solid #aaa;
+}
+
+/* line 29, ../sass/components/_tabs.scss */
 .tabs-content {
   background: #fff;
   border: 1px solid #ededed;
@@ -1478,12 +1484,12 @@ form .col:last-child {
   padding: 10px;
 }
 
-/* line 35, ../sass/components/_tabs.scss */
+/* line 38, ../sass/components/_tabs.scss */
 .tabs-content > .tab-item {
   display: none;
 }
 
-/* line 38, ../sass/components/_tabs.scss */
+/* line 41, ../sass/components/_tabs.scss */
 .tabs-content > .tab-item.active {
   display: block;
 }
@@ -1922,40 +1928,3 @@ form .col:last-child {
     margin-bottom: 0;
   }
 }
-/* it's not implemented because Sass-lang compiler is stupid i need to put manually back to screen.css for production */
-.is-not-collapsed {
-    -moz-animation-name: slideDown;
-    -moz-animation-duration: .2s;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: linear;
-    -moz-animation-direction: alternate;
-
-    -webkit-animation-name: slideDown;
-    -webkit-animation-duration: .2s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-direction: alternate;
-
-    position: relative;
-    z-index: 988;
-
-    display: block!important;
-}
-
-
-@-moz-keyframes slideDown {
-from { 
-    margin-top: -100%; 
-}
-to   { 
-    margin-top: 0; 
-}
-}
-@-webkit-keyframes slideDown {
-from { 
-    margin-top: -100%; 
-}
-to  { 
-    margin-top: 0; 
-}
-}​
