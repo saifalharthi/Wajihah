@@ -1768,7 +1768,7 @@ form .col:last-child {
 .navigation {
   background: #333;
   padding-bottom: 10px;
-  display: block;
+  display: none;
 }
 /* line 72, ../sass/components/UI/_top-bar.scss */
 .navigation .active {
