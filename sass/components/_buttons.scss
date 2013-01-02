@@ -2,17 +2,17 @@
 	width: 100%;
 }
 .btn {
-	padding: 6px 26px;
-	display: inline;
-
 	text-decoration: none;
 	text-align: center;
 	color: #333!important;
-
+	line-height: 1em;
 	background: #c1c1c1;
 	@include background-image(linear-gradient(#fff, darken(#fff,13%)));
 	border: 1px solid darken(#fff, 25%);
 	@include border-radius(4px);
+
+	padding: 6px 26px;
+	display: inline;
 
 }
 .btn:hover {

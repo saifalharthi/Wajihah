@@ -1,6 +1,7 @@
 .top-bar {
 	background: #333;
 
+
 	height: 45px;
 	z-index: 999;
 	position: relative;
@@ -64,10 +65,26 @@
 .navigation {
 	background: #333;
 	padding-bottom: 10px;
+
+	.active {
+		color: #fff!important;
+		font-weight: bold;
+	}
 }
+.navigation input {
+	border: 1px solid #333;
+}
+.navigation input:focus {
+	@include box-shadow(darken(#aaa,15%) 0 0 5px);
+}
+
 @media only screen and (min-width: 960px) {
+	.top-bar {
+		border-bottom: 1px solid #555;
+		@include box-shadow(#222 0px 1px 0px);
+	}
 	.top-bar form {
-		height: 45px;
+		height: 44px;
 		padding-top: 7.5px;
 	}
 	.top-bar .inline>li>a {
@@ -80,5 +97,17 @@
 		border-bottom: none;
 		margin-bottom: 0;
 		padding-bottom: 0;
+	}
+	.navigation {
+		background: transparent;
+	}
+	.navigation .divider {
+		background: #444;
+		@include box-shadow(#222 1px 0px 0px);
+
+		height: 44px!important;
+		margin-right:15px;
+		width: 1px!important;
+		padding: 0!important;
 	}
 }

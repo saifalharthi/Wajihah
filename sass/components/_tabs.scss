@@ -2,6 +2,7 @@
 .tabs {
 	border-bottom: 2px solid #dedede;
 	padding: 0 0 5px;
+	margin: 0;
 }
 .tabs>dd {
 	display: block;
@@ -13,6 +14,7 @@
 .tabs>dd>a {
 	color: #777;
 	text-decoration: none;
+	cursor: pointer;
 
 	padding: 0 3px 8px;
 }
@@ -22,11 +24,17 @@
 }
 
 .tabs-content {
+	background: #fff;
+	border: 1px solid #ededed;
+	border-top: none;
 	list-style: none;
+
+	margin: 0 0 15px;
+	padding:10px;
 }
-.tabs-content>li {
+.tabs-content>.tab-item {
 	display: none;
 }
-.tabs-content>.active {
+.tabs-content>.tab-item.active {
 	display: block;
 }

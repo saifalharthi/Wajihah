@@ -29,18 +29,18 @@ textarea {
 
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
 	border: 1px solid $dwhite;
-	padding: 5px;
+	padding: 6px;
 	font-family: inherit;
 	@include box-shadow(#f5f5f5 1px 1px 5px inset);
 	outline: none;
-	@include border-radius(2px);
+	@include border-radius(4px);
 	margin: 0 0 20px 0;
 	width: 100%;
 
 }
 input:focus, textarea:focus {
-	@include box-shadow(#dedede 0px 0px 5px);
-	border: 1px solid #ccc;
+	@include box-shadow(lighten(#a1a1a1,25%) 0px 0px 5px);
+	border: 1px solid lighten(#a1a1a1,5%);
 }
 form .col:last-child {
 	float:right;
