@@ -11,10 +11,6 @@
 			$('.flash-alert').fadeOut();
 		}, 2000);
 
-		// if screen is small then hide navigation cuz we are cool boys!
-		if(window.innerWidth < 960) {
-			$('.navigation').hide();
-		}
 
 		// show navigation elements cuz user want em
 		$('.collapse').click(function(){
