@@ -49,7 +49,7 @@
 
 	});
 
-	consol.log('اذا عندك مشاكل كلمني بتويتر http://twitter.com/lafikl');
+	console.log('اذا عندك مشاكل كلمني بتويتر http://twitter.com/lafikl');
 }(jQuery, window, document));
 
 
