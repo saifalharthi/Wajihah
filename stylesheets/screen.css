@@ -1461,20 +1461,19 @@ form .col:last-child {
   color: #777;
   text-decoration: none;
   cursor: pointer;
-  padding: 0 3px 8px;
 }
 
-/* line 23, ../sass/components/_tabs.scss */
+/* line 22, ../sass/components/_tabs.scss */
 .tabs > .active > a, .tabs > dd:hover > a {
   color: #555;
 }
 
-/* line 26, ../sass/components/_tabs.scss */
+/* line 25, ../sass/components/_tabs.scss */
 .tabs > .active, .tabs > dd:hover {
   border-bottom: 2px solid #aaa;
 }
 
-/* line 29, ../sass/components/_tabs.scss */
+/* line 28, ../sass/components/_tabs.scss */
 .tabs-content {
   background: #fff;
   border: 1px solid #ededed;
@@ -1484,12 +1483,12 @@ form .col:last-child {
   padding: 10px;
 }
 
-/* line 38, ../sass/components/_tabs.scss */
+/* line 37, ../sass/components/_tabs.scss */
 .tabs-content > .tab-item {
   display: none;
 }
 
-/* line 41, ../sass/components/_tabs.scss */
+/* line 40, ../sass/components/_tabs.scss */
 .tabs-content > .tab-item.active {
   display: block;
 }
