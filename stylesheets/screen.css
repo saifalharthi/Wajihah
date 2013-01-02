@@ -737,96 +737,119 @@ pre, p, h1, h2, h3, h4, h5, h6 {
   *zoom: 1;
 }
 
-/* line 7, ../sass/components/_grid.scss */
+/* line 3, ../sass/helpers/_clearfix.scss */
+.col:before,
+.col:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 8, ../sass/helpers/_clearfix.scss */
+.col:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 16, ../sass/helpers/_clearfix.scss */
+.col {
+  *zoom: 1;
+}
+
+/* line 8, ../sass/components/_grid.scss */
 .container {
   margin: 0 auto;
   max-width: 100%;
   padding: 0;
 }
 
-/* line 15, ../sass/components/_grid.scss */
+/* line 16, ../sass/components/_grid.scss */
 .one-mobile {
   width: 25%;
 }
 
-/* line 15, ../sass/components/_grid.scss */
+/* line 16, ../sass/components/_grid.scss */
 .two-mobile {
   width: 50%;
 }
 
-/* line 15, ../sass/components/_grid.scss */
+/* line 16, ../sass/components/_grid.scss */
 .three-mobile {
   width: 75%;
 }
 
-/* line 15, ../sass/components/_grid.scss */
+/* line 16, ../sass/components/_grid.scss */
 .four-mobile {
   width: 100%;
 }
 
-/* line 21, ../sass/components/_grid.scss */
+/* line 22, ../sass/components/_grid.scss */
 .row .offset-one-mobile {
   margin-right: 25%;
 }
 
-/* line 21, ../sass/components/_grid.scss */
+/* line 22, ../sass/components/_grid.scss */
 .row .offset-two-mobile {
   margin-right: 50%;
 }
 
-/* line 21, ../sass/components/_grid.scss */
+/* line 22, ../sass/components/_grid.scss */
 .row .offset-three-mobile {
   margin-right: 75%;
 }
 
-/* line 26, ../sass/components/_grid.scss */
+/* line 27, ../sass/components/_grid.scss */
 .show-on-mobile {
   display: block;
 }
 
-/* line 29, ../sass/components/_grid.scss */
+/* line 30, ../sass/components/_grid.scss */
 .show-on-desktop, .show-on-tablet, .hide-on-mobile {
   display: none;
 }
 
-/* line 35, ../sass/components/_grid.scss */
+/* line 36, ../sass/components/_grid.scss */
 .pull-right {
   float: right!important;
 }
 
-/* line 38, ../sass/components/_grid.scss */
+/* line 39, ../sass/components/_grid.scss */
 .pull-left {
   float: left!important;
 }
 
-/* line 42, ../sass/components/_grid.scss */
+/* line 43, ../sass/components/_grid.scss */
 .row.collapse {
   margin-right: 0px;
 }
 
-/* line 46, ../sass/components/_grid.scss */
+/* line 47, ../sass/components/_grid.scss */
 .row.collapse .col {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 51, ../sass/components/_grid.scss */
+/* line 52, ../sass/components/_grid.scss */
 .col {
   float: right;
   padding: 0 15px;
 }
 
-/* line 55, ../sass/components/_grid.scss */
+/* line 56, ../sass/components/_grid.scss */
 .col:last-child {
   float: left;
 }
 
-/* line 58, ../sass/components/_grid.scss */
+/* line 59, ../sass/components/_grid.scss */
 .col:first-child {
   float: right;
 }
 
-/* line 61, ../sass/components/_grid.scss */
+/* line 62, ../sass/components/_grid.scss */
 .col.centered {
   float: none;
   margin: 0 auto;
@@ -834,150 +857,150 @@ pre, p, h1, h2, h3, h4, h5, h6 {
 
 /* BIG SCREENS! */
 @media only screen and (min-width: 960px) {
-  /* line 69, ../sass/components/_grid.scss */
+  /* line 70, ../sass/components/_grid.scss */
   .container {
     width: 960px;
   }
 
-  /* line 72, ../sass/components/_grid.scss */
+  /* line 73, ../sass/components/_grid.scss */
   .row {
     margin: 0;
     margin-right: -15px;
   }
 
-  /* line 77, ../sass/components/_grid.scss */
+  /* line 78, ../sass/components/_grid.scss */
   .one {
     width: 8.33333%;
   }
 
-  /* line 77, ../sass/components/_grid.scss */
+  /* line 78, ../sass/components/_grid.scss */
   .two {
     width: 16.66667%;
   }
 
-  /* line 77, ../sass/components/_grid.scss */
+  /* line 78, ../sass/components/_grid.scss */
   .three {
     width: 25%;
   }
 
-  /* line 77, ../sass/components/_grid.scss */
+  /* line 78, ../sass/components/_grid.scss */
   .four {
     width: 33.33333%;
   }
 
-  /* line 77, ../sass/components/_grid.scss */
+  /* line 78, ../sass/components/_grid.scss */
   .five {
     width: 41.66667%;
   }
 
-  /* line 77, ../sass/components/_grid.scss */
+  /* line 78, ../sass/components/_grid.scss */
   .six {
     width: 50%;
   }
 
-  /* line 77, ../sass/components/_grid.scss */
+  /* line 78, ../sass/components/_grid.scss */
   .seven {
     width: 58.33333%;
   }
 
-  /* line 77, ../sass/components/_grid.scss */
+  /* line 78, ../sass/components/_grid.scss */
   .eight {
     width: 66.66667%;
   }
 
-  /* line 77, ../sass/components/_grid.scss */
+  /* line 78, ../sass/components/_grid.scss */
   .nine {
     width: 75%;
   }
 
-  /* line 77, ../sass/components/_grid.scss */
+  /* line 78, ../sass/components/_grid.scss */
   .ten {
     width: 83.33333%;
   }
 
-  /* line 77, ../sass/components/_grid.scss */
+  /* line 78, ../sass/components/_grid.scss */
   .eleven {
     width: 91.66667%;
   }
 
-  /* line 77, ../sass/components/_grid.scss */
+  /* line 78, ../sass/components/_grid.scss */
   .twelve {
     width: 100%;
   }
 
-  /* line 82, ../sass/components/_grid.scss */
+  /* line 83, ../sass/components/_grid.scss */
   .row .offset-one {
     margin-right: 8.33333%;
   }
 
-  /* line 82, ../sass/components/_grid.scss */
+  /* line 83, ../sass/components/_grid.scss */
   .row .offset-two {
     margin-right: 16.66667%;
   }
 
-  /* line 82, ../sass/components/_grid.scss */
+  /* line 83, ../sass/components/_grid.scss */
   .row .offset-three {
     margin-right: 25%;
   }
 
-  /* line 82, ../sass/components/_grid.scss */
+  /* line 83, ../sass/components/_grid.scss */
   .row .offset-four {
     margin-right: 33.33333%;
   }
 
-  /* line 82, ../sass/components/_grid.scss */
+  /* line 83, ../sass/components/_grid.scss */
   .row .offset-five {
     margin-right: 41.66667%;
   }
 
-  /* line 82, ../sass/components/_grid.scss */
+  /* line 83, ../sass/components/_grid.scss */
   .row .offset-six {
     margin-right: 50%;
   }
 
-  /* line 82, ../sass/components/_grid.scss */
+  /* line 83, ../sass/components/_grid.scss */
   .row .offset-seven {
     margin-right: 58.33333%;
   }
 
-  /* line 82, ../sass/components/_grid.scss */
+  /* line 83, ../sass/components/_grid.scss */
   .row .offset-eight {
     margin-right: 66.66667%;
   }
 
-  /* line 82, ../sass/components/_grid.scss */
+  /* line 83, ../sass/components/_grid.scss */
   .row .offset-nine {
     margin-right: 75%;
   }
 
-  /* line 82, ../sass/components/_grid.scss */
+  /* line 83, ../sass/components/_grid.scss */
   .row .offset-ten {
     margin-right: 83.33333%;
   }
 
-  /* line 82, ../sass/components/_grid.scss */
+  /* line 83, ../sass/components/_grid.scss */
   .row .offset-eleven {
     margin-right: 91.66667%;
   }
 
-  /* line 86, ../sass/components/_grid.scss */
+  /* line 87, ../sass/components/_grid.scss */
   .show-on-desktop, .hide-on-mobile, .hide-on-tablet {
     display: block;
   }
 
-  /* line 89, ../sass/components/_grid.scss */
+  /* line 90, ../sass/components/_grid.scss */
   .show-on-mobile, .show-on-tablet, .hide-on-desktop {
     display: none;
   }
 }
 /* Tablets */
 @media only screen and (max-width: 959px) and (min-width: 500px) {
-  /* line 98, ../sass/components/_grid.scss */
+  /* line 99, ../sass/components/_grid.scss */
   .show-on-tablet {
     display: block;
   }
 
-  /* line 101, ../sass/components/_grid.scss */
+  /* line 102, ../sass/components/_grid.scss */
   .show-on-mobile, .show-on-desktop, .hide-on-tablet {
     display: none;
   }
@@ -1899,3 +1922,40 @@ form .col:last-child {
     margin-bottom: 0;
   }
 }
+/* it's not implemented because Sass-lang compiler is stupid i need to put manually back to screen.css for production */
+.is-not-collapsed {
+    -moz-animation-name: slideDown;
+    -moz-animation-duration: .2s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    -moz-animation-direction: alternate;
+
+    -webkit-animation-name: slideDown;
+    -webkit-animation-duration: .2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-direction: alternate;
+
+    position: relative;
+    z-index: 988;
+
+    display: block!important;
+}
+
+
+@-moz-keyframes slideDown {
+from { 
+    margin-top: -100%; 
+}
+to   { 
+    margin-top: 0; 
+}
+}
+@-webkit-keyframes slideDown {
+from { 
+    margin-top: -100%; 
+}
+to  { 
+    margin-top: 0; 
+}
+}​
