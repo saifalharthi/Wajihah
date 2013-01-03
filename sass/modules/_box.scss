@@ -1,0 +1,50 @@
+@include clearfix('.box-actions');
+.box-thumb {
+	background: #fff;
+	border: 1px solid #dedede;
+	@include border-radius(4px);
+	@include box-shadow(#ededed 0 0 5px);
+
+	width: 100%;
+	margin-bottom: 10px;
+}
+.box-thumb>.box-img {
+	margin-bottom: 10px;
+	max-height: 200px;
+	overflow: hidden;
+}
+.box-thumb>.box-img>img {
+	float: right;
+	@include border-radius(4px 4px 0 0);
+}
+.box-thumb>.box-headline  {
+	font-family: arial;
+	font-size: 1.4em;
+	text-decoration: none;
+	color: $black;
+}
+.box-thumb>.box-headline:hover  {
+	color: $light-black;
+}
+.box-thumb>.box-content, .box-thumb>.box-headline, .box-actions {
+	padding: 0 10px 10px;
+}
+
+.box-actions {
+	background: #f7f7f7;
+	border-top: 1px solid #dedede;
+
+	padding-top: 10px;
+}
+.box-actions > a {
+	margin-bottom: 10px;
+}
+.box-actions > a:last-child {
+	margin-bottom: 0;
+}
+
+@media only screen and (min-width: 960px) {
+	.box-actions > a {
+		margin-bottom: 0;
+	}
+}

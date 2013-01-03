@@ -43,6 +43,24 @@
 		    }
 		  });
 
+	    $('.dropdown-toggle').click(function(e) {
+	    	e.preventDefault();
+
+	    	var parent = $(this).parent(),
+	    		target = parent.find('.menu');
+
+
+	    	if ( !( target.hasClass('dropdown-shown') ) ) {
+
+	    		target.addClass('dropdown-shown');
+
+	    	}else {
+	    		target.removeClass('dropdown-shown');
+	    	}
+	    	
+
+	    });
+
 	});
 }(jQuery, window, document));
 

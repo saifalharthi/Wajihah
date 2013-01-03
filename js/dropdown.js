@@ -1,11 +1,11 @@
 ;(function( $ ) {
   $.fn.dropdown = function(options) {
-  
-  	if (window.innerWidth > 960) {
-  		return;
-  	} else {
 
-	  	this.click(function() {
+  	if (window.innerWidth >= 960) {
+  		return;
+  	}else {
+
+  		  this.click(function() {
 	  		var parent = $(this).parent(),
 	    		targetSelector = $(parent).attr('data-dropdown'),
 	    		target = $(parent).find(targetSelector).eq(0);
@@ -25,9 +25,11 @@
 	    	$(parent).removeClass('is-shown');
 	    	$(parent).animate({left: '100%'}, 200);
 	    });
-  	}
-    
+  	
 
+	  	
+
+  	}
 
   };
 })( jQuery );

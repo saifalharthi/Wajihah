@@ -1,0 +1,78 @@
+@include clearfix('.menu');
+@include clearfix('.menu>li');
+
+.dropdown {
+	padding-right:1%; 
+}
+.dropdown>.menu {
+	background: #fff;
+	border: 1px solid #dedede;
+
+	position: absolute;
+	list-style: none;
+	padding: 5px 0;
+	margin-top: 0;
+	min-width: 98%;
+	margin-right: -15px;
+	display: none;
+}
+.dropdown-toggle,.menu>li>a {
+	color: #333;
+	text-decoration: none;
+}
+.menu>li {
+	clear: both;
+	width: 100%;
+	padding: 0;
+}
+
+.menu>li>a {
+
+	float: right;
+	width: 100%;
+	padding: 5px 20px!important;
+}
+.menu>li>a:hover {
+	background: #08c;
+	color: #fff;
+}
+
+.menu>.divider {
+	height: 1px;
+	width: 100%;
+	background: #dedede;
+	padding: 0;
+}
+
+.dropdown-arrow {
+	@extend %arrow-left;
+	margin-right: 10px;
+}
+.menu>.divider  {
+	background: #ededed;
+
+	height: 1px;
+	padding: 0;
+	margin: 5px 0;
+	width: 100%
+}
+.dropdown>.dropdown-shown {
+	display:block;
+}
+
+@media only screen and (min-width: 960px) {
+	.dropdown>.menu, .top-bar .dropdown .menu {
+		min-width: 160px;
+	}
+	.dropdown>.menu {
+		@include border-radius(4px);
+		@include box-shadow(lighten(#dedede,7%) 0 2px 5px);
+	}
+	.dropdown-arrow {
+		border-right-color: transparent;
+		border-left: 4px solid transparent;
+		border-top: 4px solid #777; 
+		border-bottom: none;
+
+	}
+}
