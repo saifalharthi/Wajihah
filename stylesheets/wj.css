@@ -1124,25 +1124,21 @@ form .col:last-child {
 
 /* line 1, ../sass/modules/_buttons.scss */
 .btn {
-  width: 100%;
-}
-
-/* line 4, ../sass/modules/_buttons.scss */
-.btn {
   text-decoration: none;
   text-align: center;
   color: #333!important;
   line-height: 1em;
   background: #dedede;
   border: none;
-  border-bottom: 2px solid #b8b8b8;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  font-size: 12px;
   padding: 6px 26px;
   display: inline;
+  width: 100%;
   -webkit-transition: all 0.2s linear;
   -webkit-transition-delay: 0;
   -moz-transition: all 0.2s linear 0;
@@ -1150,34 +1146,34 @@ form .col:last-child {
   transition: all 0.2s linear 0;
 }
 
-/* line 20, ../sass/modules/_buttons.scss */
+/* line 18, ../sass/modules/_buttons.scss */
 .btn:hover {
   background: #d1d1d1;
 }
 
-/* line 23, ../sass/modules/_buttons.scss */
+/* line 21, ../sass/modules/_buttons.scss */
 .btn:active {
   position: relative;
   top: 1px;
 }
 
-/* line 27, ../sass/modules/_buttons.scss */
+/* line 25, ../sass/modules/_buttons.scss */
 .btn.small {
   padding: 6px 18px;
 }
 
-/* line 30, ../sass/modules/_buttons.scss */
+/* line 28, ../sass/modules/_buttons.scss */
 .btn.small, .btn.mini {
   font-family: tahoma;
   font-size: 11px;
 }
 
-/* line 34, ../sass/modules/_buttons.scss */
+/* line 32, ../sass/modules/_buttons.scss */
 .btn.mini {
   padding: 3px 9px;
 }
 
-/* line 37, ../sass/modules/_buttons.scss */
+/* line 35, ../sass/modules/_buttons.scss */
 .btn.large {
   font-family: arial;
   font-size: 16px;
@@ -1186,78 +1182,73 @@ form .col:last-child {
   padding: 10px 50px;
 }
 
-/* line 44, ../sass/modules/_buttons.scss */
+/* line 42, ../sass/modules/_buttons.scss */
 .btn.blue {
   background: #0099fa;
   text-shadow: 0px 1px 0px #005580;
-  border-bottom: 2px solid #006aad;
 }
 
-/* line 49, ../sass/modules/_buttons.scss */
+/* line 46, ../sass/modules/_buttons.scss */
 .btn.blue:hover {
   background: #0089e1;
 }
 
-/* line 53, ../sass/modules/_buttons.scss */
+/* line 50, ../sass/modules/_buttons.scss */
 .btn.green {
   background: #00bf5a;
   text-shadow: 0px 1px 0px #007336;
-  border-bottom: 2px solid #007336;
 }
 
-/* line 58, ../sass/modules/_buttons.scss */
+/* line 54, ../sass/modules/_buttons.scss */
 .btn.green:hover {
   background: #00a64e;
 }
 
-/* line 63, ../sass/modules/_buttons.scss */
+/* line 59, ../sass/modules/_buttons.scss */
 .btn.yellow {
   background: #fea904;
-  border-bottom: 2px solid #b57801;
   text-shadow: 0px 1px 0px #b57801;
 }
 
-/* line 68, ../sass/modules/_buttons.scss */
+/* line 63, ../sass/modules/_buttons.scss */
 .btn.yellow:hover {
   background: #e89901;
 }
 
-/* line 73, ../sass/modules/_buttons.scss */
+/* line 68, ../sass/modules/_buttons.scss */
 .btn.red {
   background: #cc000e;
-  border-bottom: 2px solid #800009;
   text-shadow: 0px 1px 0px #800009;
 }
 
-/* line 78, ../sass/modules/_buttons.scss */
+/* line 72, ../sass/modules/_buttons.scss */
 .btn.red:hover {
   background: #b3000c;
 }
 
-/* line 82, ../sass/modules/_buttons.scss */
+/* line 76, ../sass/modules/_buttons.scss */
 .btn.black {
   background: #333333;
-  border-bottom: 2px solid #0d0d0d;
   text-shadow: 0px 1px 0px #0d0d0d;
 }
 
-/* line 88, ../sass/modules/_buttons.scss */
+/* line 81, ../sass/modules/_buttons.scss */
 .btn.black:hover {
   background: #262626;
 }
 
-/* line 91, ../sass/modules/_buttons.scss */
+/* line 84, ../sass/modules/_buttons.scss */
 .btn.blue, .btn.black, .btn.green, .btn.red, .btn.yellow {
   color: #fff!important;
 }
 
 @media only screen and (min-width: 960px) {
-  /* line 96, ../sass/modules/_buttons.scss */
+  /* line 89, ../sass/modules/_buttons.scss */
   .btn {
     width: auto;
   }
 
-  /* line 99, ../sass/modules/_buttons.scss */
+  /* line 92, ../sass/modules/_buttons.scss */
   form > .btn {
     margin: 0 15px;
   }
