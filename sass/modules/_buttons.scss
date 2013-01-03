@@ -7,6 +7,7 @@
 	color: #333!important;
 	line-height: 1em;
 	background: $grey;
+	border: none;
 	border-bottom: 2px solid darken($grey,15%);
 	@include border-radius(4px);
 
