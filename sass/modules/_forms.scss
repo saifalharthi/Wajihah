@@ -6,7 +6,7 @@ legend {
 }
 fieldset {
 	@include border-radius(2px);
-	border: 1px solid $dwhite;
+	border: 1px solid $grey;
 }
 label {
 	color: #494949;
@@ -28,7 +28,7 @@ textarea {
 }
 
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
-	border: 1px solid $dwhite;
+	border: 1px solid $grey;
 	padding: 6px;
 	font-family: inherit;
 	@include box-shadow(#f5f5f5 1px 1px 5px inset);
@@ -56,7 +56,7 @@ form .col:last-child {
 	margin-bottom: 10px;
 
 	background: #f1f1f1;
-	border: 1px solid $dwhite;
+	border: 1px solid $grey;
 	text-align: center;
 	font-weight: bold;
 	color: #555;

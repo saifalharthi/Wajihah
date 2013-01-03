@@ -1,18 +1,16 @@
 .btn {
-	width: 100%;
-}
-.btn {
 	text-decoration: none;
 	text-align: center;
 	color: #333!important;
 	line-height: 1em;
 	background: $grey;
 	border: none;
-	border-bottom: 2px solid darken($grey,15%);
 	@include border-radius(4px);
+	font-size:12px;
 
 	padding: 6px 26px;
 	display: inline;
+	width: 100%;
 
 	@include single-transition(all, 0.2s, linear, 0);
 
@@ -44,7 +42,6 @@
 .btn.blue {
 	background: $blue;
 	@include text-shadow(0px 1px 0px darken(#08c, 15%));
-	border-bottom: 2px solid darken($blue,15%);
 }
 .btn.blue:hover {
 	background: darken($blue,5%);
@@ -53,7 +50,6 @@
 .btn.green {
 	background: $green;
 	@include text-shadow(0px 1px 0px darken($green, 15%));
-	border-bottom: 2px solid darken($green, 15%);
 }
 .btn.green:hover {
 	background: darken($green,5%);
@@ -62,7 +58,6 @@
 
 .btn.yellow {
 	background: $yellow;
-	border-bottom: 2px solid darken($yellow, 15%);
 	@include text-shadow(0px 1px 0px darken($yellow, 15%));
 }
 .btn.yellow:hover {
@@ -72,7 +67,6 @@
 
 .btn.red {
 	background: $red;
-	border-bottom: 2px solid darken($red, 15%);
 	@include text-shadow(0px 1px 0px darken(#cc000e, 15%));
 }
 .btn.red:hover {
@@ -82,7 +76,6 @@
 .btn.black {
 	background: $black;
 
-	border-bottom: 2px solid darken($black, 15%);
 	@include text-shadow(0px 1px 0px darken(#333, 15%));
 }
 .btn.black:hover {
