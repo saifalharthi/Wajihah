@@ -17,11 +17,14 @@
 
 			var target = $(this).attr('data-collapse');
 
-			if (!$(target).hasClass('is-not-collapsed') ) {
-
+			if ($(target).hasClass('is-collapsed') ) {
+				$(target).removeClass('is-collapsed');
 				$(target).addClass('is-not-collapsed');
+				
 			}else {
+
 				$(target).removeClass('is-not-collapsed');
+				$(target).addClass('is-collapsed');
 			}
 
 		});
@@ -42,6 +45,8 @@
 
 		    }
 		  });
+
+	  
 
 	});
 }(jQuery, window, document));
