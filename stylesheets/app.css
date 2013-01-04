@@ -1,0 +1,19 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.intro {
+	background: #08c;
+	color: #fff;
+
+	margin-top: -20px;
+	padding: 20px;
+}
+.slogan {
+	font-weight: 300;
+	font-family: 'Droid Arabic Naskh';
+	text-shadow: 0 1px 1px rgba(1,1,1,.3);
+
+}
