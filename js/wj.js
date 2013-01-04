@@ -17,11 +17,14 @@
 
 			var target = $(this).attr('data-collapse');
 
-			if (!$(target).hasClass('is-not-collapsed') ) {
-
+			if ($(target).hasClass('is-collapsed') ) {
+				$(target).removeClass('is-collapsed');
 				$(target).addClass('is-not-collapsed');
+				
 			}else {
+
 				$(target).removeClass('is-not-collapsed');
+				$(target).addClass('is-collapsed');
 			}
 
 		});
@@ -43,23 +46,7 @@
 		    }
 		  });
 
-	    $('.dropdown-toggle').click(function(e) {
-	    	e.preventDefault();
-
-	    	var parent = $(this).parent(),
-	    		target = parent.find('.menu');
-
-
-	    	if ( !( target.hasClass('dropdown-shown') ) ) {
-
-	    		target.addClass('dropdown-shown');
-
-	    	}else {
-	    		target.removeClass('dropdown-shown');
-	    	}
-	    	
-
-	    });
+	  
 
 	});
 }(jQuery, window, document));

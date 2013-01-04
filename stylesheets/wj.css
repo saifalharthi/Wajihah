@@ -1743,9 +1743,84 @@ form .col:last-child {
   box-shadow: #848484 0 0 5px;
 }
 
-/* GPU accelerated animation! */
-/* line 84, ../sass/modules/_top-bar.scss */
+/* line 83, ../sass/modules/_top-bar.scss */
+.top-bar .dropdown-toggle {
+  line-height: 45px;
+  color: #999;
+  font-size: 12px;
+}
+
+/* line 88, ../sass/modules/_top-bar.scss */
+.top-bar .dropdown {
+  padding: 0;
+}
+
+/* line 91, ../sass/modules/_top-bar.scss */
+.top-bar .dropdown .menu {
+  margin-top: -5px;
+  min-width: 100%;
+}
+
+/* line 95, ../sass/modules/_top-bar.scss */
+.is-not-collapsed, .is-collapsed {
+  position: relative;
+  z-index: 988;
+}
+
+/* line 99, ../sass/modules/_top-bar.scss */
 .is-not-collapsed {
+  -moz-animation-name: "slideDown";
+  -moz-animation-duration: .2s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease;
+  -webkit-animation-name: "slideDown";
+  -webkit-animation-duration: .2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -ms-animation-name: "slideDown";
+  -ms-animation-duration: .2s;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-timing-function: ease;
+  -o-animation-name: "slideDown";
+  -o-animation-duration: .2s;
+  -o-animation-timing-function: ease;
+  -o-animation-iteration-count: 1;
+  animation-name: "slideDown";
+  animation-duration: 1s;
+  animation-delay: .2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  display: block!important;
+}
+
+/* line 103, ../sass/modules/_top-bar.scss */
+.is-collapsed {
+  -moz-animation-name: "slideUp";
+  -moz-animation-duration: .2s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease;
+  -webkit-animation-name: "slideUp";
+  -webkit-animation-duration: .2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -ms-animation-name: "slideUp";
+  -ms-animation-duration: .2s;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-timing-function: ease;
+  -o-animation-name: "slideUp";
+  -o-animation-duration: .2s;
+  -o-animation-timing-function: ease;
+  -o-animation-iteration-count: 1;
+  animation-name: "slideUp";
+  animation-duration: 1s;
+  animation-delay: .2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+/* GPU accelerated animation! */
+/* line 107, ../sass/modules/_top-bar.scss */
+.is-not-collapsed, .is-collapsed {
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -1753,97 +1828,170 @@ form .col:last-child {
   transform: translateZ(0);
 }
 
-/* line 87, ../sass/modules/_top-bar.scss */
-.top-bar .dropdown-toggle {
-  line-height: 45px;
-  color: #999;
-  font-size: 12px;
-}
-
-/* line 92, ../sass/modules/_top-bar.scss */
-.top-bar .dropdown {
-  padding: 0;
-}
-
-/* line 95, ../sass/modules/_top-bar.scss */
-.top-bar .dropdown .menu {
-  margin-top: -5px;
-  min-width: 100%;
-}
-
-/* line 101, ../sass/modules/_top-bar.scss */
-.is-not-collapsed {
-  -moz-animation-name: slideDown;
-  -moz-animation-duration: .2s;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: linear;
-  -moz-animation-direction: alternate;
-  -webkit-animation-name: slideDown;
-  -webkit-animation-duration: .2s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-direction: alternate;
-  position: relative;
-  z-index: 988;
-  display: block!important;
-}
-
 @-moz-keyframes slideDown {
-  /* line 126, ../sass/modules/_top-bar.scss */
+  /* line 113, ../sass/modules/_top-bar.scss */
   0% {
     margin-top: -100%;
   }
 
-  /* line 129, ../sass/modules/_top-bar.scss */
+  /* line 116, ../sass/modules/_top-bar.scss */
   25% {
     margin-top: -75%;
   }
 
-  /* line 132, ../sass/modules/_top-bar.scss */
+  /* line 119, ../sass/modules/_top-bar.scss */
   50% {
     margin-top: -50%;
   }
 
-  /* line 135, ../sass/modules/_top-bar.scss */
+  /* line 122, ../sass/modules/_top-bar.scss */
   75% {
     margin-top: -25%;
   }
 
-  /* line 138, ../sass/modules/_top-bar.scss */
+  /* line 125, ../sass/modules/_top-bar.scss */
   100% {
     margin-top: 0;
   }
 }
 
 @-webkit-keyframes slideDown {
-  /* line 126, ../sass/modules/_top-bar.scss */
+  /* line 113, ../sass/modules/_top-bar.scss */
   0% {
     margin-top: -100%;
   }
 
-  /* line 129, ../sass/modules/_top-bar.scss */
+  /* line 116, ../sass/modules/_top-bar.scss */
   25% {
     margin-top: -75%;
   }
 
-  /* line 132, ../sass/modules/_top-bar.scss */
+  /* line 119, ../sass/modules/_top-bar.scss */
   50% {
     margin-top: -50%;
   }
 
-  /* line 135, ../sass/modules/_top-bar.scss */
+  /* line 122, ../sass/modules/_top-bar.scss */
   75% {
     margin-top: -25%;
   }
 
-  /* line 138, ../sass/modules/_top-bar.scss */
+  /* line 125, ../sass/modules/_top-bar.scss */
   100% {
     margin-top: 0;
   }
 }
 
+@keyframes slideDown {
+  /* line 113, ../sass/modules/_top-bar.scss */
+  0% {
+    margin-top: -100%;
+  }
+
+  /* line 116, ../sass/modules/_top-bar.scss */
+  25% {
+    margin-top: -75%;
+  }
+
+  /* line 119, ../sass/modules/_top-bar.scss */
+  50% {
+    margin-top: -50%;
+  }
+
+  /* line 122, ../sass/modules/_top-bar.scss */
+  75% {
+    margin-top: -25%;
+  }
+
+  /* line 125, ../sass/modules/_top-bar.scss */
+  100% {
+    margin-top: 0;
+  }
+}
+
+@-moz-keyframes slideUp {
+  /* line 131, ../sass/modules/_top-bar.scss */
+  0% {
+    margin-top: 0;
+  }
+
+  /* line 134, ../sass/modules/_top-bar.scss */
+  25% {
+    margin-top: -25%;
+  }
+
+  /* line 137, ../sass/modules/_top-bar.scss */
+  50% {
+    margin-top: -50%;
+  }
+
+  /* line 140, ../sass/modules/_top-bar.scss */
+  75% {
+    margin-top: -75%;
+  }
+
+  /* line 143, ../sass/modules/_top-bar.scss */
+  100% {
+    margin-top: -100%;
+  }
+}
+
+@-webkit-keyframes slideUp {
+  /* line 131, ../sass/modules/_top-bar.scss */
+  0% {
+    margin-top: 0;
+  }
+
+  /* line 134, ../sass/modules/_top-bar.scss */
+  25% {
+    margin-top: -25%;
+  }
+
+  /* line 137, ../sass/modules/_top-bar.scss */
+  50% {
+    margin-top: -50%;
+  }
+
+  /* line 140, ../sass/modules/_top-bar.scss */
+  75% {
+    margin-top: -75%;
+  }
+
+  /* line 143, ../sass/modules/_top-bar.scss */
+  100% {
+    margin-top: -100%;
+  }
+}
+
+@keyframes slideUp {
+  /* line 131, ../sass/modules/_top-bar.scss */
+  0% {
+    margin-top: 0;
+  }
+
+  /* line 134, ../sass/modules/_top-bar.scss */
+  25% {
+    margin-top: -25%;
+  }
+
+  /* line 137, ../sass/modules/_top-bar.scss */
+  50% {
+    margin-top: -50%;
+  }
+
+  /* line 140, ../sass/modules/_top-bar.scss */
+  75% {
+    margin-top: -75%;
+  }
+
+  /* line 143, ../sass/modules/_top-bar.scss */
+  100% {
+    margin-top: -100%;
+  }
+}
+
 @media only screen and (min-width: 960px) {
-  /* line 146, ../sass/modules/_top-bar.scss */
+  /* line 151, ../sass/modules/_top-bar.scss */
   .top-bar {
     border-bottom: 1px solid #555;
     -webkit-box-shadow: #222222 0px 1px 0px;
@@ -1851,36 +1999,36 @@ form .col:last-child {
     box-shadow: #222222 0px 1px 0px;
   }
 
-  /* line 150, ../sass/modules/_top-bar.scss */
+  /* line 155, ../sass/modules/_top-bar.scss */
   .top-bar form {
     height: 44px;
     padding-top: 7.5px;
   }
 
-  /* line 154, ../sass/modules/_top-bar.scss */
+  /* line 159, ../sass/modules/_top-bar.scss */
   .top-bar .inline > li > a {
     line-height: 45px;
   }
 
-  /* line 157, ../sass/modules/_top-bar.scss */
+  /* line 162, ../sass/modules/_top-bar.scss */
   .navigation {
     padding-bottom: 0;
     display: block;
   }
 
-  /* line 161, ../sass/modules/_top-bar.scss */
+  /* line 166, ../sass/modules/_top-bar.scss */
   .top-bar .inline > li {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
   }
 
-  /* line 166, ../sass/modules/_top-bar.scss */
+  /* line 171, ../sass/modules/_top-bar.scss */
   .navigation {
     background: transparent;
   }
 
-  /* line 169, ../sass/modules/_top-bar.scss */
+  /* line 174, ../sass/modules/_top-bar.scss */
   .navigation .divider {
     background: #444;
     -webkit-box-shadow: #222222 1px 0px 0px;
@@ -1892,9 +2040,34 @@ form .col:last-child {
     padding: 0!important;
   }
 
-  /* line 178, ../sass/modules/_top-bar.scss */
+  /* line 183, ../sass/modules/_top-bar.scss */
   .top-bar .dropdown .menu {
     margin-top: -5px;
+  }
+
+  /* line 186, ../sass/modules/_top-bar.scss */
+  .is-not-collapsed, .is-collapsed {
+    -moz-animation-name: "none";
+    -moz-animation-duration: .2s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease;
+    -webkit-animation-name: "none";
+    -webkit-animation-duration: .2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -ms-animation-name: "none";
+    -ms-animation-duration: .2s;
+    -ms-animation-iteration-count: 1;
+    -ms-animation-timing-function: ease;
+    -o-animation-name: "none";
+    -o-animation-duration: .2s;
+    -o-animation-timing-function: ease;
+    -o-animation-iteration-count: 1;
+    animation-name: "none";
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
   }
 }
 /* line 1, ../sass/modules/_ui-small.scss */
