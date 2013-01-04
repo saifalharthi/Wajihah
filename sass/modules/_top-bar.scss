@@ -80,6 +80,9 @@
 .navigation input:focus {
 	@include box-shadow(darken(#aaa,15%) 0 0 5px);
 }
+.navigation .divider {
+	display: none;
+}
 .top-bar .dropdown-toggle {
 	line-height: 45px;
 	color: #999;
@@ -179,6 +182,7 @@
 		margin-right:15px;
 		width: 1px!important;
 		padding: 0!important;
+		display: block;
 	}
 	.top-bar .dropdown .menu {
 		margin-top: -5px;
