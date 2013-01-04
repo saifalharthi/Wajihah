@@ -1771,45 +1771,79 @@ form .col:last-child {
   min-width: 100%;
 }
 
-/*
+/* line 101, ../sass/modules/_top-bar.scss */
 .is-not-collapsed {
-        -moz-animation-name: slideDown;
-        -moz-animation-duration: .2s;
-        -moz-animation-iteration-count: 1;
-        -moz-animation-timing-function: linear;
-        -moz-animation-direction: alternate;
-
-        -webkit-animation-name: slideDown;
-        -webkit-animation-duration: .2s;
-        -webkit-animation-iteration-count: 1;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-direction: alternate;
-
-        position: relative;
-        z-index: 988;
-
-        display: block!important;
+  -moz-animation-name: slideDown;
+  -moz-animation-duration: .2s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear;
+  -moz-animation-direction: alternate;
+  -webkit-animation-name: slideDown;
+  -webkit-animation-duration: .2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  position: relative;
+  z-index: 988;
+  display: block!important;
 }
-
 
 @-moz-keyframes slideDown {
-    from { 
-        margin-top: -100%; 
-    }
-    to   { 
-        margin-top: 0; 
-    }
+  /* line 126, ../sass/modules/_top-bar.scss */
+  0% {
+    margin-top: -100%;
+  }
+
+  /* line 129, ../sass/modules/_top-bar.scss */
+  25% {
+    margin-top: -75%;
+  }
+
+  /* line 132, ../sass/modules/_top-bar.scss */
+  50% {
+    margin-top: -50%;
+  }
+
+  /* line 135, ../sass/modules/_top-bar.scss */
+  75% {
+    margin-top: -25%;
+  }
+
+  /* line 138, ../sass/modules/_top-bar.scss */
+  100% {
+    margin-top: 0;
+  }
 }
+
 @-webkit-keyframes slideDown {
-    from { 
-        margin-top: -100%; 
-    }
-    to  { 
-        margin-top: 0; 
-    }
-}​*/
+  /* line 126, ../sass/modules/_top-bar.scss */
+  0% {
+    margin-top: -100%;
+  }
+
+  /* line 129, ../sass/modules/_top-bar.scss */
+  25% {
+    margin-top: -75%;
+  }
+
+  /* line 132, ../sass/modules/_top-bar.scss */
+  50% {
+    margin-top: -50%;
+  }
+
+  /* line 135, ../sass/modules/_top-bar.scss */
+  75% {
+    margin-top: -25%;
+  }
+
+  /* line 138, ../sass/modules/_top-bar.scss */
+  100% {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (min-width: 960px) {
-  /* line 139, ../sass/modules/_top-bar.scss */
+  /* line 146, ../sass/modules/_top-bar.scss */
   .top-bar {
     border-bottom: 1px solid #555;
     -webkit-box-shadow: #222222 0px 1px 0px;
@@ -1817,36 +1851,36 @@ form .col:last-child {
     box-shadow: #222222 0px 1px 0px;
   }
 
-  /* line 143, ../sass/modules/_top-bar.scss */
+  /* line 150, ../sass/modules/_top-bar.scss */
   .top-bar form {
     height: 44px;
     padding-top: 7.5px;
   }
 
-  /* line 147, ../sass/modules/_top-bar.scss */
+  /* line 154, ../sass/modules/_top-bar.scss */
   .top-bar .inline > li > a {
     line-height: 45px;
   }
 
-  /* line 150, ../sass/modules/_top-bar.scss */
+  /* line 157, ../sass/modules/_top-bar.scss */
   .navigation {
     padding-bottom: 0;
     display: block;
   }
 
-  /* line 154, ../sass/modules/_top-bar.scss */
+  /* line 161, ../sass/modules/_top-bar.scss */
   .top-bar .inline > li {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
   }
 
-  /* line 159, ../sass/modules/_top-bar.scss */
+  /* line 166, ../sass/modules/_top-bar.scss */
   .navigation {
     background: transparent;
   }
 
-  /* line 162, ../sass/modules/_top-bar.scss */
+  /* line 169, ../sass/modules/_top-bar.scss */
   .navigation .divider {
     background: #444;
     -webkit-box-shadow: #222222 1px 0px 0px;
@@ -1858,7 +1892,7 @@ form .col:last-child {
     padding: 0!important;
   }
 
-  /* line 171, ../sass/modules/_top-bar.scss */
+  /* line 178, ../sass/modules/_top-bar.scss */
   .top-bar .dropdown .menu {
     margin-top: -5px;
   }
