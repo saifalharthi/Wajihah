@@ -7,6 +7,16 @@ body {
 	direction: rtl;
 	background: #fff;
 }
+a {
+	color: darken($blue,10%);
+	text-decoration: none;
+}
+a:hover {
+	color: darken($blue,2%);
+}
+a:visited {
+	color: darken($blue,25%);
+}
 .rounded {
 	@include border-radius(4px);
 }
