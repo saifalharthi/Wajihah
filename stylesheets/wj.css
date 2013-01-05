@@ -1400,8 +1400,6 @@ form .col:last-child {
 
 /* line 7, ../sass/modules/_tabs.scss */
 .tabs > dd {
-  color: #777;
-  text-decoration: none;
   display: block;
   float: right;
   padding: 5px;
@@ -1409,18 +1407,24 @@ form .col:last-child {
   cursor: pointer;
 }
 
-/* line 17, ../sass/modules/_tabs.scss */
+/* line 14, ../sass/modules/_tabs.scss */
+.tabs > dd > a {
+  color: #777;
+  text-decoration: none;
+}
+
+/* line 18, ../sass/modules/_tabs.scss */
 .tabs > dd:first-child {
   margin-right: 0;
 }
 
-/* line 20, ../sass/modules/_tabs.scss */
-.tabs > .active, .tabs > dd:hover {
+/* line 21, ../sass/modules/_tabs.scss */
+.tabs > .active, .tabs > dd:hover > a {
   border-bottom: 2px solid #aaa;
   color: #555;
 }
 
-/* line 24, ../sass/modules/_tabs.scss */
+/* line 25, ../sass/modules/_tabs.scss */
 .tabs-content {
   background: #fff;
   border: 1px solid #ededed;
@@ -1430,12 +1434,12 @@ form .col:last-child {
   padding: 10px;
 }
 
-/* line 33, ../sass/modules/_tabs.scss */
+/* line 34, ../sass/modules/_tabs.scss */
 .tabs-content > .tab-item {
   display: none;
 }
 
-/* line 36, ../sass/modules/_tabs.scss */
+/* line 37, ../sass/modules/_tabs.scss */
 .tabs-content > .tab-item.active {
   display: block;
 }
