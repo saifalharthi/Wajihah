@@ -18,8 +18,10 @@
 .tabs>dd:first-child {
 	margin-right: 0;
 }
-.tabs>.active, .tabs>dd:hover>a {
+.tabs>.active, .tabs>dd:hover {
 	border-bottom: 2px solid #aaa;
+}
+.tabs>.active, .tabs>dd:hover>a {
 	color: #555;
 }
 .tabs-content {
