@@ -60,8 +60,8 @@
 .row [class*="col-"]:first-child {
 	float: right;
 }
-.row .col-centered {
-	float: none;
+.col-centered {
+	float: none!important;
 	margin: 0 auto;
 }
 
