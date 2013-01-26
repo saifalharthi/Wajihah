@@ -60,7 +60,7 @@
 .row [class*="col-"]:first-child {
 	float: right;
 }
-.col-centered {
+.row .col-centered {
 	float: none;
 	margin: 0 auto;
 }
