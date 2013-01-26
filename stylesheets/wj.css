@@ -216,7 +216,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
+  _font-family: "courier new", monospace;
   font-size: 1em;
 }
 
@@ -367,7 +367,7 @@ form {
  */
 /* line 362, ../sass/modules/_normalize.scss */
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -784,22 +784,22 @@ pre, p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 16, ../sass/modules/_grid.scss */
-.one-mobile {
+.col-one-mobile {
   width: 25%;
 }
 
 /* line 16, ../sass/modules/_grid.scss */
-.two-mobile {
+.col-two-mobile {
   width: 50%;
 }
 
 /* line 16, ../sass/modules/_grid.scss */
-.three-mobile {
+.col-three-mobile {
   width: 75%;
 }
 
 /* line 16, ../sass/modules/_grid.scss */
-.four-mobile {
+.col-four-mobile {
   width: 100%;
 }
 
@@ -850,173 +850,174 @@ pre, p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 52, ../sass/modules/_grid.scss */
-.col {
+.row [class*="col-"] {
   float: right;
   padding: 0 15px;
 }
 
 /* line 56, ../sass/modules/_grid.scss */
-.col:last-child {
+.row [class*="col-"]:last-child {
   float: left;
 }
 
-/* line 59, ../sass/modules/_grid.scss */
-.col:first-child {
+/* to align the col when .row only have one child */
+/* line 60, ../sass/modules/_grid.scss */
+.row [class*="col-"]:first-child {
   float: right;
 }
 
-/* line 62, ../sass/modules/_grid.scss */
-.col.centered {
-  float: none;
+/* line 63, ../sass/modules/_grid.scss */
+.col-centered {
+  float: none!important;
   margin: 0 auto;
 }
 
 /* BIG SCREENS! */
 @media only screen and (min-width: 960px) {
-  /* line 70, ../sass/modules/_grid.scss */
+  /* line 71, ../sass/modules/_grid.scss */
   .container {
     width: 960px;
   }
 
-  /* line 73, ../sass/modules/_grid.scss */
+  /* line 74, ../sass/modules/_grid.scss */
   .row {
     margin: 0;
     margin-right: -15px;
   }
 
-  /* line 78, ../sass/modules/_grid.scss */
-  .one {
+  /* line 79, ../sass/modules/_grid.scss */
+  .col-one {
     width: 8.33333%;
   }
 
-  /* line 78, ../sass/modules/_grid.scss */
-  .two {
+  /* line 79, ../sass/modules/_grid.scss */
+  .col-two {
     width: 16.66667%;
   }
 
-  /* line 78, ../sass/modules/_grid.scss */
-  .three {
+  /* line 79, ../sass/modules/_grid.scss */
+  .col-three {
     width: 25%;
   }
 
-  /* line 78, ../sass/modules/_grid.scss */
-  .four {
+  /* line 79, ../sass/modules/_grid.scss */
+  .col-four {
     width: 33.33333%;
   }
 
-  /* line 78, ../sass/modules/_grid.scss */
-  .five {
+  /* line 79, ../sass/modules/_grid.scss */
+  .col-five {
     width: 41.66667%;
   }
 
-  /* line 78, ../sass/modules/_grid.scss */
-  .six {
+  /* line 79, ../sass/modules/_grid.scss */
+  .col-six {
     width: 50%;
   }
 
-  /* line 78, ../sass/modules/_grid.scss */
-  .seven {
+  /* line 79, ../sass/modules/_grid.scss */
+  .col-seven {
     width: 58.33333%;
   }
 
-  /* line 78, ../sass/modules/_grid.scss */
-  .eight {
+  /* line 79, ../sass/modules/_grid.scss */
+  .col-eight {
     width: 66.66667%;
   }
 
-  /* line 78, ../sass/modules/_grid.scss */
-  .nine {
+  /* line 79, ../sass/modules/_grid.scss */
+  .col-nine {
     width: 75%;
   }
 
-  /* line 78, ../sass/modules/_grid.scss */
-  .ten {
+  /* line 79, ../sass/modules/_grid.scss */
+  .col-ten {
     width: 83.33333%;
   }
 
-  /* line 78, ../sass/modules/_grid.scss */
-  .eleven {
+  /* line 79, ../sass/modules/_grid.scss */
+  .col-eleven {
     width: 91.66667%;
   }
 
-  /* line 78, ../sass/modules/_grid.scss */
-  .twelve {
+  /* line 79, ../sass/modules/_grid.scss */
+  .col-twelve {
     width: 100%;
   }
 
-  /* line 83, ../sass/modules/_grid.scss */
+  /* line 84, ../sass/modules/_grid.scss */
   .row .offset-one {
     margin-right: 8.33333%;
   }
 
-  /* line 83, ../sass/modules/_grid.scss */
+  /* line 84, ../sass/modules/_grid.scss */
   .row .offset-two {
     margin-right: 16.66667%;
   }
 
-  /* line 83, ../sass/modules/_grid.scss */
+  /* line 84, ../sass/modules/_grid.scss */
   .row .offset-three {
     margin-right: 25%;
   }
 
-  /* line 83, ../sass/modules/_grid.scss */
+  /* line 84, ../sass/modules/_grid.scss */
   .row .offset-four {
     margin-right: 33.33333%;
   }
 
-  /* line 83, ../sass/modules/_grid.scss */
+  /* line 84, ../sass/modules/_grid.scss */
   .row .offset-five {
     margin-right: 41.66667%;
   }
 
-  /* line 83, ../sass/modules/_grid.scss */
+  /* line 84, ../sass/modules/_grid.scss */
   .row .offset-six {
     margin-right: 50%;
   }
 
-  /* line 83, ../sass/modules/_grid.scss */
+  /* line 84, ../sass/modules/_grid.scss */
   .row .offset-seven {
     margin-right: 58.33333%;
   }
 
-  /* line 83, ../sass/modules/_grid.scss */
+  /* line 84, ../sass/modules/_grid.scss */
   .row .offset-eight {
     margin-right: 66.66667%;
   }
 
-  /* line 83, ../sass/modules/_grid.scss */
+  /* line 84, ../sass/modules/_grid.scss */
   .row .offset-nine {
     margin-right: 75%;
   }
 
-  /* line 83, ../sass/modules/_grid.scss */
+  /* line 84, ../sass/modules/_grid.scss */
   .row .offset-ten {
     margin-right: 83.33333%;
   }
 
-  /* line 83, ../sass/modules/_grid.scss */
+  /* line 84, ../sass/modules/_grid.scss */
   .row .offset-eleven {
     margin-right: 91.66667%;
   }
 
-  /* line 87, ../sass/modules/_grid.scss */
+  /* line 88, ../sass/modules/_grid.scss */
   .show-on-desktop, .hide-on-mobile, .hide-on-tablet {
     display: block;
   }
 
-  /* line 90, ../sass/modules/_grid.scss */
+  /* line 91, ../sass/modules/_grid.scss */
   .show-on-mobile, .show-on-tablet, .hide-on-desktop {
     display: none;
   }
 }
 /* Tablets */
 @media only screen and (max-width: 959px) and (min-width: 500px) {
-  /* line 99, ../sass/modules/_grid.scss */
+  /* line 100, ../sass/modules/_grid.scss */
   .show-on-tablet {
     display: block;
   }
 
-  /* line 102, ../sass/modules/_grid.scss */
+  /* line 103, ../sass/modules/_grid.scss */
   .show-on-mobile, .show-on-desktop, .hide-on-tablet {
     display: none;
   }
@@ -1266,7 +1267,7 @@ form .col:last-child {
   background-image: -moz-linear-gradient(bottom, #dedede, #f8f8f8);
   background-image: -o-linear-gradient(bottom, #dedede, #f8f8f8);
   background-image: linear-gradient(bottom, #dedede, #f8f8f8);
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
 }
 
 /* line 96, ../sass/modules/_buttons.scss */
@@ -1436,7 +1437,7 @@ form .col:last-child {
 
 /* line 21, ../sass/modules/_tabs.scss */
 .tabs > .active, .tabs > dd:hover {
-  border-bottom: 2px solid #aaa;
+  border-bottom: 2px solid #aaaaaa;
 }
 
 /* line 24, ../sass/modules/_tabs.scss */
@@ -1669,7 +1670,7 @@ form .col:last-child {
 }
 
 /* line 11, ../sass/modules/_top-bar.scss */
-.logo {
+.top-bar .logo {
   height: 45px;
 }
 
@@ -1688,13 +1689,13 @@ form .col:last-child {
 }
 
 /* line 24, ../sass/modules/_top-bar.scss */
-.navigation-toggle {
+.top-bar .navigation-toggle {
   padding-top: 10px;
   max-width: 80px;
   float: left;
 }
 /* line 29, ../sass/modules/_top-bar.scss */
-.navigation-toggle .toggle-line {
+.top-bar .navigation-toggle .toggle-line {
   background: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1709,13 +1710,13 @@ form .col:last-child {
   float: left;
 }
 /* line 40, ../sass/modules/_top-bar.scss */
-.navigation-toggle .toggle-line:last-child {
+.top-bar .navigation-toggle .toggle-line:last-child {
   margin-bottom: 0;
 }
 
 /* line 44, ../sass/modules/_top-bar.scss */
 .top-bar .inline > li {
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #444444;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
@@ -1757,7 +1758,7 @@ form .col:last-child {
 
 /* line 77, ../sass/modules/_top-bar.scss */
 .navigation input {
-  border: 1px solid #333;
+  border: 1px solid #333333;
 }
 
 /* line 80, ../sass/modules/_top-bar.scss */
@@ -2022,7 +2023,7 @@ form .col:last-child {
 @media only screen and (min-width: 960px) {
   /* line 154, ../sass/modules/_top-bar.scss */
   .top-bar {
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid #555555;
     -webkit-box-shadow: #222222 0px 1px 0px;
     -moz-box-shadow: #222222 0px 1px 0px;
     box-shadow: #222222 0px 1px 0px;
@@ -2111,13 +2112,13 @@ form .col:last-child {
 .arrow-down {
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
-  border-top: 4px solid #777;
+  border-top: 4px solid #777777;
 }
 
 /* line 14, ../sass/modules/_ui-small.scss */
 .arrow-left, .dropdown-arrow {
   border-bottom: 4px solid transparent;
-  border-right: 4px solid #777;
+  border-right: 4px solid #777777;
   border-top: 4px solid transparent;
 }
 
@@ -2287,7 +2288,7 @@ form .col:last-child {
 .menu > li > a {
   float: right;
   width: 100%;
-  padding: 5px 20px!important;
+  padding: 5px 20px !important;
 }
 
 /* line 35, ../sass/modules/_drop-down.scss */
@@ -2345,7 +2346,7 @@ form .col:last-child {
   .dropdown-arrow {
     border-right-color: transparent;
     border-left: 4px solid transparent;
-    border-top: 4px solid #777;
+    border-top: 4px solid #777777;
     border-bottom: none;
   }
 }
