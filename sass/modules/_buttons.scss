@@ -11,6 +11,7 @@
 	padding: 6px 26px;
 	display: inline;
 	width: 100%;
+	display: inline-block;
 
 	@include single-transition(all, 0.2s, linear, 0);
 

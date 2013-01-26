@@ -1156,6 +1156,7 @@ form .col:last-child {
   padding: 6px 26px;
   display: inline;
   width: 100%;
+  display: inline-block;
   -webkit-transition: all 0.2s linear;
   -webkit-transition-delay: 0;
   -moz-transition: all 0.2s linear 0;
@@ -1163,34 +1164,34 @@ form .col:last-child {
   transition: all 0.2s linear 0;
 }
 
-/* line 18, ../sass/modules/_buttons.scss */
+/* line 19, ../sass/modules/_buttons.scss */
 .btn:hover {
   background: #d1d1d1;
 }
 
-/* line 21, ../sass/modules/_buttons.scss */
+/* line 22, ../sass/modules/_buttons.scss */
 .btn:active {
   position: relative;
   top: 1px;
 }
 
-/* line 26, ../sass/modules/_buttons.scss */
+/* line 27, ../sass/modules/_buttons.scss */
 .btn-small {
   padding: 6px 18px;
 }
 
-/* line 29, ../sass/modules/_buttons.scss */
+/* line 30, ../sass/modules/_buttons.scss */
 .btn-small, .btn-mini {
   font-family: tahoma;
   font-size: 11px;
 }
 
-/* line 33, ../sass/modules/_buttons.scss */
+/* line 34, ../sass/modules/_buttons.scss */
 .btn-mini {
   padding: 3px 9px;
 }
 
-/* line 36, ../sass/modules/_buttons.scss */
+/* line 37, ../sass/modules/_buttons.scss */
 .btn-large {
   font-family: arial;
   font-size: 16px;
@@ -1199,68 +1200,68 @@ form .col:last-child {
   padding: 10px 50px;
 }
 
-/* line 44, ../sass/modules/_buttons.scss */
+/* line 45, ../sass/modules/_buttons.scss */
 .btn-blue {
   background: #0099fa;
   text-shadow: 0px 1px 0px #005580;
 }
 
-/* line 48, ../sass/modules/_buttons.scss */
+/* line 49, ../sass/modules/_buttons.scss */
 .btn-blue:hover {
   background: #0089e1;
 }
 
-/* line 52, ../sass/modules/_buttons.scss */
+/* line 53, ../sass/modules/_buttons.scss */
 .btn-green {
   background: #00bf5a;
   text-shadow: 0px 1px 0px #007336;
 }
 
-/* line 56, ../sass/modules/_buttons.scss */
+/* line 57, ../sass/modules/_buttons.scss */
 .btn-green:hover {
   background: #00a64e;
 }
 
-/* line 62, ../sass/modules/_buttons.scss */
+/* line 63, ../sass/modules/_buttons.scss */
 .btn-yellow {
   background: #fea904;
   text-shadow: 0px 1px 0px #b57801;
 }
 
-/* line 66, ../sass/modules/_buttons.scss */
+/* line 67, ../sass/modules/_buttons.scss */
 .btn-yellow:hover {
   background: #e89901;
 }
 
-/* line 71, ../sass/modules/_buttons.scss */
+/* line 72, ../sass/modules/_buttons.scss */
 .btn-red {
   background: #cc000e;
   text-shadow: 0px 1px 0px #800009;
 }
 
-/* line 75, ../sass/modules/_buttons.scss */
+/* line 76, ../sass/modules/_buttons.scss */
 .btn-red:hover {
   background: #b3000c;
 }
 
-/* line 79, ../sass/modules/_buttons.scss */
+/* line 80, ../sass/modules/_buttons.scss */
 .btn-black {
   background: #333333;
   text-shadow: 0px 1px 0px #0d0d0d;
 }
 
-/* line 84, ../sass/modules/_buttons.scss */
+/* line 85, ../sass/modules/_buttons.scss */
 .btn-black:hover {
   background: #262626;
 }
 
-/* line 87, ../sass/modules/_buttons.scss */
+/* line 88, ../sass/modules/_buttons.scss */
 .btn-blue, .btn-black, .btn-green, .btn-red, .btn-yellow {
   color: #fff!important;
 }
 
 /* fancy buttons */
-/* line 92, ../sass/modules/_buttons.scss */
+/* line 93, ../sass/modules/_buttons.scss */
 .btn-fancy {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #dedede), color-stop(100%, #f8f8f8));
   background-image: -webkit-linear-gradient(bottom, #dedede, #f8f8f8);
@@ -1270,7 +1271,7 @@ form .col:last-child {
   border: 1px solid #cccccc;
 }
 
-/* line 96, ../sass/modules/_buttons.scss */
+/* line 97, ../sass/modules/_buttons.scss */
 .btn-fancy:hover {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #d1d1d1), color-stop(100%, #ebebeb));
   background-image: -webkit-linear-gradient(bottom, #d1d1d1, #ebebeb);
@@ -1279,7 +1280,7 @@ form .col:last-child {
   background-image: linear-gradient(bottom, #d1d1d1, #ebebeb);
 }
 
-/* line 99, ../sass/modules/_buttons.scss */
+/* line 100, ../sass/modules/_buttons.scss */
 .btn-fancy.btn-blue {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #0099fa), color-stop(100%, #2eaeff));
   background-image: -webkit-linear-gradient(bottom, #0099fa, #2eaeff);
@@ -1289,7 +1290,7 @@ form .col:last-child {
   border: 1px solid #006aad;
 }
 
-/* line 103, ../sass/modules/_buttons.scss */
+/* line 104, ../sass/modules/_buttons.scss */
 .btn-fancy.btn-blue:hover {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #0089e1), color-stop(100%, #15a4ff));
   background-image: -webkit-linear-gradient(bottom, #0089e1, #15a4ff);
@@ -1298,7 +1299,7 @@ form .col:last-child {
   background-image: linear-gradient(bottom, #0089e1, #15a4ff);
 }
 
-/* line 106, ../sass/modules/_buttons.scss */
+/* line 107, ../sass/modules/_buttons.scss */
 .btn-fancy.btn-green {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #00bf5a), color-stop(100%, #00f272));
   background-image: -webkit-linear-gradient(bottom, #00bf5a, #00f272);
@@ -1308,7 +1309,7 @@ form .col:last-child {
   border: 1px solid #007336;
 }
 
-/* line 110, ../sass/modules/_buttons.scss */
+/* line 111, ../sass/modules/_buttons.scss */
 .btn-fancy.btn-green:hover {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #00a64e), color-stop(100%, #00d966));
   background-image: -webkit-linear-gradient(bottom, #00a64e, #00d966);
@@ -1317,7 +1318,7 @@ form .col:last-child {
   background-image: linear-gradient(bottom, #00a64e, #00d966);
 }
 
-/* line 113, ../sass/modules/_buttons.scss */
+/* line 114, ../sass/modules/_buttons.scss */
 .btn-fancy.btn-yellow {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #fea904), color-stop(100%, #feba37));
   background-image: -webkit-linear-gradient(bottom, #fea904, #feba37);
@@ -1327,7 +1328,7 @@ form .col:last-child {
   border: 1px solid #b57801;
 }
 
-/* line 117, ../sass/modules/_buttons.scss */
+/* line 118, ../sass/modules/_buttons.scss */
 .btn-fancy.btn-yellow:hover {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #e89901), color-stop(100%, #feb21d));
   background-image: -webkit-linear-gradient(bottom, #e89901, #feb21d);
@@ -1336,7 +1337,7 @@ form .col:last-child {
   background-image: linear-gradient(bottom, #e89901, #feb21d);
 }
 
-/* line 120, ../sass/modules/_buttons.scss */
+/* line 121, ../sass/modules/_buttons.scss */
 .btn-fancy.btn-red {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #cc000e), color-stop(100%, #ff0012));
   background-image: -webkit-linear-gradient(bottom, #cc000e, #ff0012);
@@ -1346,7 +1347,7 @@ form .col:last-child {
   border: 1px solid #800009;
 }
 
-/* line 124, ../sass/modules/_buttons.scss */
+/* line 125, ../sass/modules/_buttons.scss */
 .btn-fancy.btn-red:hover {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #b3000c), color-stop(100%, #e60010));
   background-image: -webkit-linear-gradient(bottom, #b3000c, #e60010);
@@ -1355,7 +1356,7 @@ form .col:last-child {
   background-image: linear-gradient(bottom, #b3000c, #e60010);
 }
 
-/* line 127, ../sass/modules/_buttons.scss */
+/* line 128, ../sass/modules/_buttons.scss */
 .btn-fancy.btn-black {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #333333), color-stop(100%, #4d4d4d));
   background-image: -webkit-linear-gradient(bottom, #333333, #4d4d4d);
@@ -1365,7 +1366,7 @@ form .col:last-child {
   border: 1px solid #0d0d0d;
 }
 
-/* line 131, ../sass/modules/_buttons.scss */
+/* line 132, ../sass/modules/_buttons.scss */
 .btn-fancy.btn-black:hover {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #262626), color-stop(100%, #404040));
   background-image: -webkit-linear-gradient(bottom, #262626, #404040);
@@ -1375,12 +1376,12 @@ form .col:last-child {
 }
 
 @media only screen and (min-width: 960px) {
-  /* line 137, ../sass/modules/_buttons.scss */
+  /* line 138, ../sass/modules/_buttons.scss */
   .btn {
     width: auto;
   }
 
-  /* line 140, ../sass/modules/_buttons.scss */
+  /* line 141, ../sass/modules/_buttons.scss */
   form > .btn {
     margin: 0 15px;
   }
