@@ -6,7 +6,7 @@
 	background: $grey;
 	border: none;
 	@include border-radius(4px);
-	font-size:12px;
+	font-size: 14px;
 
 	padding: 6px 26px;
 	display: inline;
@@ -23,17 +23,17 @@
 	top:1px;
 }
 
-.btn.small {
+.btn-small {
 	padding: 6px 18px;
 }
-.btn.small , .btn.mini {
+.btn-small , .btn-mini {
 	font-family: tahoma;
 	font-size: 11px;
 }
-.btn.mini {
+.btn-mini {
 	padding: 3px 9px;
 }
-.btn.large {
+.btn-large {
 	font-family: arial;
 	font-size: 16px;
 	line-height: 20px;
@@ -41,94 +41,94 @@
 	padding: 10px 50px;
 }
 
-.btn.blue {
+.btn-blue {
 	background: $blue;
 	@include text-shadow(0px 1px 0px darken(#08c, 15%));
 }
-.btn.blue:hover {
+.btn-blue:hover {
 	background: darken($blue,5%);
 }
 
-.btn.green {
+.btn-green {
 	background: $green;
 	@include text-shadow(0px 1px 0px darken($green, 15%));
 }
-.btn.green:hover {
+.btn-green:hover {
 	background: darken($green,5%);
 }
 
 
 
-.btn.yellow {
+.btn-yellow {
 	background: $yellow;
 	@include text-shadow(0px 1px 0px darken($yellow, 15%));
 }
-.btn.yellow:hover {
+.btn-yellow:hover {
 	background: darken($yellow,5%);
 }
 
 
-.btn.red {
+.btn-red {
 	background: $red;
 	@include text-shadow(0px 1px 0px darken(#cc000e, 15%));
 }
-.btn.red:hover {
+.btn-red:hover {
 	background: darken($red,5%);
 }
 
-.btn.black {
+.btn-black {
 	background: $black;
 
 	@include text-shadow(0px 1px 0px darken(#333, 15%));
 }
-.btn.black:hover {
+.btn-black:hover {
 	background: darken($black,5%);
 }
-.btn.blue, .btn.black,.btn.green, .btn.red, .btn.yellow {
+.btn-blue, .btn-black,.btn-green, .btn-red, .btn-yellow {
 	color: #fff!important;
 }
 
 /* fancy buttons */ 
-.btn.fancy {
+.btn-fancy {
 	@include background-image(linear-gradient(bottom, $grey, lighten($grey,10%) ));
 	border: 1px solid #ccc;
 }
-.btn.fancy:hover {
+.btn-fancy:hover {
 	@include background-image(linear-gradient(bottom, darken($grey,5%), lighten($grey,5%) ));
 }
-.btn.fancy.blue {
+.btn-fancy.btn-blue {
 	@include background-image(linear-gradient(bottom, $blue, lighten($blue,10%) ));
 	border: 1px solid darken($blue,15%);
 }
-.btn.fancy.blue:hover {
+.btn-fancy.btn-blue:hover {
 	@include background-image(linear-gradient(bottom, darken($blue,5%), lighten($blue,5%) ));
 }
-.btn.fancy.green {
+.btn-fancy.btn-green {
 	@include background-image(linear-gradient(bottom, $green, lighten($green,10%) ));
 	border: 1px solid darken($green,15%);
 }
-.btn.fancy.green:hover {
+.btn-fancy.btn-green:hover {
 	@include background-image(linear-gradient(bottom, darken($green,5%), lighten($green,5%) ));
 }
-.btn.fancy.yellow {
+.btn-fancy.btn-yellow {
 	@include background-image(linear-gradient(bottom, $yellow, lighten($yellow,10%) ));
 	border: 1px solid darken($yellow,15%);
 }
-.btn.fancy.yellow:hover {
+.btn-fancy.btn-yellow:hover {
 	@include background-image(linear-gradient(bottom, darken($yellow,5%), lighten($yellow,5%) ));
 }
-.btn.fancy.red {
+.btn-fancy.btn-red {
 	@include background-image(linear-gradient(bottom, $red, lighten($red,10%) ));
 	border: 1px solid darken($red,15%);
 }
-.btn.fancy.red:hover {
+.btn-fancy.btn-red:hover {
 	@include background-image(linear-gradient(bottom, darken($red,5%), lighten($red,5%) ));
 }
-.btn.fancy.black {
+.btn-fancy.btn-black {
 	@include background-image(linear-gradient(bottom, $black, lighten($black,10%) ));
 	border: 1px solid darken($black,15%);
 }
-.btn.fancy.black:hover {
+.btn-fancy.btn-black:hover {
 	@include background-image(linear-gradient(bottom, darken($black,5%), lighten($black,5%) ));
 }
 
