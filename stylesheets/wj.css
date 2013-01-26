@@ -1683,13 +1683,13 @@ form .col:last-child {
 }
 
 /* line 24, ../sass/modules/_top-bar.scss */
-.navigation-toggle {
+.top-bar .navigation-toggle {
   padding-top: 10px;
   max-width: 80px;
   float: left;
 }
 /* line 29, ../sass/modules/_top-bar.scss */
-.navigation-toggle .toggle-line {
+.top-bar .navigation-toggle .toggle-line {
   background: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1704,7 +1704,7 @@ form .col:last-child {
   float: left;
 }
 /* line 40, ../sass/modules/_top-bar.scss */
-.navigation-toggle .toggle-line:last-child {
+.top-bar .navigation-toggle .toggle-line:last-child {
   margin-bottom: 0;
 }
 
