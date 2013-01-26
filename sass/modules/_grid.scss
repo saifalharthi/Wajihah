@@ -56,6 +56,10 @@
 .row [class*="col-"]:last-child {
 	float: left;
 }
+/* to align the col when .row only have one child */
+.row [class*="col-"]:first-child {
+	float: right;
+}
 .col-centered {
 	float: none;
 	margin: 0 auto;
