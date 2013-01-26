@@ -13,7 +13,7 @@
 
 
 @for $i from 1 through $mobile-cols-num {
-	.#{str-num($i)}-mobile {
+	.col-#{str-num($i)}-mobile {
 		width: percentage($i / $mobile-cols-num);
 	}
 
@@ -49,17 +49,14 @@
 	padding-left: 0;
 }
 
-.col {
+.row [class*="col-"] {
 	float: right;
 	padding: 0 $cols-gutter;
 }
-.col:last-child {
+.row [class*="col-"]:last-child {
 	float: left;
 }
-.col:first-child {
-	float: right;
-}
-.col.centered {
+.col-centered {
 	float: none;
 	margin: 0 auto;
 }
@@ -75,7 +72,7 @@
 		margin-right: -15px;
 	}
 	@for $i from 1 through $cols-num {
-		.#{str-num($i)} {
+		.col-#{str-num($i)} {
 			width: percentage($i / $cols-num);
 		}
 	}
