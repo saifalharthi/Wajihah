@@ -992,14 +992,15 @@ form .col:last-child {
   -o-border-radius: 0px 3px 3px 0px;
   border-radius: 0px 3px 3px 0px;
   display: block;
-  position: absolute;
+  position: relative;
   z-index: 2;
   line-height: 1.9em;
   margin-bottom: 10px;
   float: right;
+  right: 2px;
 }
 
-/* line 59, ../sass/modules/_forms.scss */
+/* line 60, ../sass/modules/_forms.scss */
 .nav input {
   width: auto;
   float: right;

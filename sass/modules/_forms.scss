@@ -50,11 +50,12 @@ form .col:last-child {
 
 
 	display: block;
-	position: absolute;
+	position: relative;
 	z-index: 2;
 	line-height: 1.9em;
 	margin-bottom: 10px;
 	float: right;
+	right: 2px;
 }
 .nav input {
 	width: auto;
