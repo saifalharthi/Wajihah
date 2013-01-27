@@ -1242,11 +1242,6 @@ form .col:last-child {
   .btn {
     width: auto;
   }
-
-  /* line 140, ../sass/modules/_buttons.scss */
-  form > .btn {
-    margin: 0 15px;
-  }
 }
 /* line 3, ../sass/helpers/_clearfix.scss */
 .tabs:before,
