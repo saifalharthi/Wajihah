@@ -929,22 +929,17 @@ label {
 }
 
 /* line 19, ../sass/modules/_forms.scss */
-label.inline {
+.form-inline {
   float: none;
   line-height: 2em;
 }
 
 /* line 23, ../sass/modules/_forms.scss */
-label.right {
-  text-align: right;
-}
-
-/* line 26, ../sass/modules/_forms.scss */
 textarea {
   padding: 5px!important;
 }
 
-/* line 30, ../sass/modules/_forms.scss */
+/* line 27, ../sass/modules/_forms.scss */
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
   border: 1px solid #dedede;
   padding: 6px;
@@ -959,9 +954,10 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   -o-border-radius: 4px;
   border-radius: 4px;
   margin: 0 0 20px 0;
+  display: block;
 }
 
-/* line 41, ../sass/modules/_forms.scss */
+/* line 38, ../sass/modules/_forms.scss */
 input:focus, textarea:focus {
   -webkit-box-shadow: #e1e1e1 0px 0px 5px;
   -moz-box-shadow: #e1e1e1 0px 0px 5px;
@@ -969,12 +965,12 @@ input:focus, textarea:focus {
   border: 1px solid #aeaeae;
 }
 
-/* line 45, ../sass/modules/_forms.scss */
+/* line 42, ../sass/modules/_forms.scss */
 form .col:last-child {
   float: right;
 }
 
-/* line 49, ../sass/modules/_forms.scss */
+/* line 46, ../sass/modules/_forms.scss */
 .prefix {
   background: #f1f1f1;
   border: 1px solid #dedede;
@@ -995,7 +991,7 @@ form .col:last-child {
   float: right;
 }
 
-/* line 66, ../sass/modules/_forms.scss */
+/* line 63, ../sass/modules/_forms.scss */
 .nav input {
   width: auto;
   float: right;
