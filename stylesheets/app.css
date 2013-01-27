@@ -3,7 +3,6 @@
 body {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	font-family: 'Droid Arabic Naskh', arial;
 }
 .intro {
 	background: #08c;
@@ -48,4 +47,7 @@ footer {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	direction: ltr;
+}
+.margin-bottom {
+	margin-bottom: 10px;
 }
