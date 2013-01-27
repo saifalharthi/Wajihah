@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>واجهة: الحقول – Forms</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+
+        <link rel="stylesheet" type="text/css" href="../stylesheets/wj.min.css">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/app.css">
+
+    </head>
+
+    <body>
+
+    	<div class="top-bar">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-three-mobile col-two logo">
+
+                       <a href="#" class="brand"><img src="../images/logo.png"></a>
+
+                    </div>
+
+                    <div class="navigation-toggle hide-on-desktop col-one-mobile collapse" data-collapse=".navigation">
+                        <span class="toggle-line"></span>
+                        <span class="toggle-line"></span>
+                        <span class="toggle-line"></span>
+                    </div>
+
+                    <div class="col-four-mobile col-ten navigation is-collapsed">
+
+                        <ul class="inline ">
+                            <li><a href="#">فكرة واجهة</a></li>
+                            <li><a href="#">طريقة االإستعمال</a></li>
+                            <li><a href="#" class="active">العناصر</a></li>                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-twelve col-four-mobile">
+                    <h1>حقول البيانات – Forms</h1>
+                    <p>هذه هي الطريقة الوحيدة للحصول على بيانات من المستخدم، لذا يجب التعامل معها بإهتمام كبير ولذا قمت بتخصيص جزء من واجهة لها.</p>
+                    <br />
+                    <hr />
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-twelve col-four-mobile">
+                   
+                    <h3>نموذج حقول بيانات - Default form</h3>
+                    <br />
+                    
+                </div>
+            </div>
+        <div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-twelve col-four-mobile">
+                    <form>
+                        <input type="text" placeholder="الحقل الأول" id="field1" />
+                        <input type="text" placeholder="الحقل الثاني" id="field1" />
+                        <textarea placeholder="تجربة" rows="5" cols="45" ></textarea>
+                        <button class="btn btn-black btn-fancy">إضافة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-twelve col-four-mobile">
+                    <br />
+                    <div style="direction:ltr;">
+                        <script src="https://gist.github.com/4647767.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- END DEFAULT FORM -->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-twelve col-four-mobile">
+                    <br />
+                    <hr />
+                    <br />
+                    <h3>موازاة اسم لحقل مع الحقل - Inline Label and fields</h3>
+                    <p>في أحيان كثيرة قد تحتاج لموازاة الحقل مع الاسم حتى تسهل عميلة قراءة كل حقل ومعرفة بماذا تملأه. يمكنك ذلك بإستخدام <a href="../modules/grid.html">التوزيع الشبكي Grid</a></p>
+                    
+                </div>
+            </div>
+        <div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-twelve col-four-mobile">
+                    <form>
+                            <div class="col-two  col-one-mobile">
+                                <label>اسمك</label>
+                            </div>
+                            <div class="col-ten col-three-mobile">
+                                <input type="text" class="" />
+                            </div>
+                            <div class="col-two col-one-mobile">
+                                <label>اسمك</label>
+                            </div>
+                            <div class="col-ten col-three-mobile">
+                                <input type="text"  />
+                            </div>
+                            <button class="btn btn-fancy">اضافة</button>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-twelve col-four-mobile">
+                    <br />
+                    <div style="direction:ltr;">
+                        <script src="https://gist.github.com/4647790.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- END DEFAULT FORM -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-twelve col-four-mobile">
+                    <br />
+                    <hr />
+                    <br />
+                    <h3>مجموعة حقول - Fieldset</h3>
+                    <p>عنصر ممتاز إذا كان لديك الكثير من الحقول وتريد توزيعها بشكل منظم حتى يسهل على المستخدم تعبئتها وفهم لأي جزء تنتمي.</p>
+                    
+                </div>
+            </div>
+        <div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-twelve col-four-mobile">
+                    <form>
+                            <fieldset>
+                                <legend>مجموعة حقول</legend>
+                                <input type="text" placeholder="الحقل الأول" id="field1" />
+                                <input type="text" placeholder="الحقل الثاني" id="field1" />
+                                <textarea placeholder="تجربة" rows="5" cols="45" ></textarea>
+                                <button class="btn btn-black btn-fancy">إضافة</button>
+
+                            </fieldset>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-twelve col-four-mobile">
+                    <br />
+                    <div style="direction:ltr;">
+                        <script src="https://gist.github.com/4647840.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- END FIELDSET FORM -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-twelve col-four-mobile">
+                    <br />
+                    <hr />
+                    <br />
+                    <h3>بادئة - Prefix</h3>
+                    <p>أحياناً قد تحتاج لوضع علامة قبل الحقل حتى توضع للمستخدم جزء معين من الحقل كإضافة علامة $ لكي يعرف أن العملة هي الدولار. ويتم ذلك عن طريق اضافة عنصر <code>span</code> ويحتوي على الكلاس <code>prefix</code> </p>
+                    
+                </div>
+            </div>
+        <div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-twelve col-four-mobile">
+                    <form>
+                            
+                        <input type="text" placeholder="الحقل الأول" id="field1" />
+                        <span class=" prefix">$</span>  <input type="text" placeholder="القيمة المادية" id="field1" />
+                        <textarea placeholder="تجربة" rows="5" cols="45" ></textarea>
+                        <button class="btn btn-black btn-fancy">إضافة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-twelve col-four-mobile">
+                    <br />
+                    <div style="direction:ltr;">
+                        <script src="https://gist.github.com/4647878.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- END PREFIX -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-twelve col-four-mobile">
+                    <br />
+                    <hr />
+                    <br />
+                    <h3>حقول متوازية - Inline form</h3>
+                    <p>بإمكانك موازاة الحقول مع بعضها البعض وذلك بإضافة الكلاس <code>inline</code> للعنصر <code>form</code>  </p>
+                    
+                </div>
+            </div>
+        <div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-twelve col-four-mobile">
+                    <form class="inline">
+                            
+                        <input type="text" placeholder="الحقل الأول" id="field1" />
+                        <button class="btn btn-black btn-fancy">إضافة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-twelve col-four-mobile">
+                    <br />
+                    <div style="direction:ltr;">
+                        <script src="https://gist.github.com/4648317.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- END INLINE FORM -->
+
+
+
+    </body>
+</html>
