@@ -959,10 +959,9 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   -o-border-radius: 4px;
   border-radius: 4px;
   margin: 0 0 20px 0;
-  width: 100%;
 }
 
-/* line 42, ../sass/modules/_forms.scss */
+/* line 41, ../sass/modules/_forms.scss */
 input:focus, textarea:focus {
   -webkit-box-shadow: #e1e1e1 0px 0px 5px;
   -moz-box-shadow: #e1e1e1 0px 0px 5px;
@@ -970,12 +969,12 @@ input:focus, textarea:focus {
   border: 1px solid #aeaeae;
 }
 
-/* line 46, ../sass/modules/_forms.scss */
+/* line 45, ../sass/modules/_forms.scss */
 form .col:last-child {
   float: right;
 }
 
-/* line 50, ../sass/modules/_forms.scss */
+/* line 49, ../sass/modules/_forms.scss */
 .prefix {
   background: #f1f1f1;
   border: 1px solid #dedede;
@@ -996,7 +995,7 @@ form .col:last-child {
   float: right;
 }
 
-/* line 67, ../sass/modules/_forms.scss */
+/* line 66, ../sass/modules/_forms.scss */
 .nav input {
   width: auto;
   float: right;
