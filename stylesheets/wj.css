@@ -584,6 +584,19 @@ pre, p, h1, h2, h3, h4, h5, h6 {
   /* IE 5+ */
 }
 
+/* line 70, ../sass/modules/_base.scss */
+code {
+  background: #f5f5f5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px color #dedede;
+  color: #345;
+  font-weight: bold;
+}
+
 /* GRID */
 /* line 3, ../sass/helpers/_clearfix.scss */
 .container:before,
