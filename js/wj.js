@@ -20,7 +20,7 @@
 			if ($(target).hasClass('is-collapsed') ) {
 				$(target).removeClass('is-collapsed');
 				$(target).addClass('is-not-collapsed');
-				
+
 			}else {
 
 				$(target).removeClass('is-not-collapsed');
@@ -35,7 +35,7 @@
 		    var target = $(this).attr('data-tabs-target');
 
 		    if( !$(this).hasClass('active') && !($(target).hasClass('active')) ) {
-		      
+
 		      $('.tabs>.active').removeClass('active');
 		      $('.tabs-content>.active').removeClass('active');
 
@@ -46,9 +46,5 @@
 		    }
 		  });
 
-	  
-
 	});
 }(jQuery, window, document));
-
-
